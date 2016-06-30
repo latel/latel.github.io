@@ -1,0 +1,1026 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-my-hexo-next">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.1"/>
+
+
+    <meta name="description" content="一枚追求用户极致体验的前端工程师。" />
+
+
+
+	<meta name="keywords" content="微证券," />
+
+  <meta name="baidu-site-verification" content="G9yMkDY5mG" />
+  <title> 微证券代码规范 // 前端低级工程师 </title>
+</head>
+
+<body>
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <div id="header" class="header">
+      <div class="header-inner">
+        <h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand">
+      <span class="logo">
+        <i class="icon-logo"></i>
+      </span>
+      <span class="site-title">前端低级工程师</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+
+  <ul id="menu" class="menu">
+    
+     
+        
+      <li class="mw-harlem_shake_me im_first menu-item  menu-item-home">
+        <a href="/">
+          <i class="menu-item-icon icon-home"></i> <br />
+          首页
+        </a>
+      </li>
+      
+    
+        
+      <li class="mw-harlem_shake_me im_first menu-item  menu-item-about">
+        <a href="/about">
+          <i class="menu-item-icon icon-about"></i> <br />
+          关于
+        </a>
+      </li>
+      
+    
+        
+      <li class="mw-harlem_shake_me im_first menu-item  menu-item-tags">
+        <a href="/tags">
+          <i class="menu-item-icon icon-tags"></i> <br />
+          标签
+        </a>
+      </li>
+      
+    
+        
+      <li class="mw-harlem_shake_me im_first menu-item  menu-item-archives">
+        <a href="/archives">
+          <i class="menu-item-icon icon-archives"></i> <br />
+          归档
+        </a>
+      </li>
+      
+    
+  <!--增加high一下-->
+  
+  </ul>
+
+
+      </div>
+    </div>
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+            
+          
+
+          <div id="posts" class="posts-expand">
+            
+  
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              微证券代码规范
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          
+            发表于 2016-06-05
+            <!--增加编辑日期-->
+              &nbsp 更新于 2016-06-30
+          
+        </span>
+
+        
+          
+            <span class="post-category">
+              &nbsp; | &nbsp; 分类于
+              
+                <a href="/categories/堆代码的时候/">堆代码的时候</a>
+
+                
+                
+
+              
+            </span>
+          
+        
+
+        
+          
+        
+      </div>
+    </div>
+
+    
+      <div class="post-body">
+
+        
+        
+
+        
+          <p>&#x968F;&#x7740;&#x9879;&#x76EE;&#x7684;&#x63A8;&#x8FDB;&#xFF0C;&#x548C;&#x56E2;&#x961F;&#x6210;&#x5458;&#x7684;&#x589E;&#x52A0;&#x66F4;&#x66FF;&#xFF0C;&#x5236;&#x5B9A;&#x4E00;&#x4EFD;&#x89C4;&#x8303;&#x53EF;&#x4EE5;&#x5728;&#x56E2;&#x961F;&#x534F;&#x4F5C;&#x4E2D;&#xFF0C;&#x907F;&#x514D;&#x4F4E;&#x7EA7; Bug&#xFF0C;&#x4EA7;&#x51FA;&#x98CE;&#x683C;&#x7EDF;&#x4E00;&#x7684;&#x4EE3;&#x7801;&#x5E76;&#x6709;&#x6548;&#x63A7;&#x5236;&#x4EE3;&#x7801;&#x8D28;&#x91CF;&#x3002;<br>&#x6B64;&#x89C4;&#x8303;&#x5171;&#x5305;&#x542B;&#x7F16;&#x8F91;&#x5668;&#x914D;&#x7F6E;&#x3001;&#x4EE3;&#x7801;&#x98CE;&#x683C;&#x89C4;&#x8303;&#x3001;&#x6CE8;&#x91CA;&#x89C4;&#x8303;&#x548C;&#x5FAE;&#x8BC1;&#x5238;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#x56DB;&#x4E2A;&#x65B9;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x3002;<br><a id="more"></a></p>
+<h2 id="1-&#x7F16;&#x8F91;&#x5668;&#x914D;&#x7F6E;"><a href="#1-&#x7F16;&#x8F91;&#x5668;&#x914D;&#x7F6E;" class="headerlink" title="1. &#x7F16;&#x8F91;&#x5668;&#x914D;&#x7F6E;"></a>1. &#x7F16;&#x8F91;&#x5668;&#x914D;&#x7F6E;</h2><p>&#x7531;&#x4E8E;&#x56E2;&#x961F;&#x6210;&#x5458;&#x7684;&#x4E2A;&#x4EBA;&#x4E60;&#x60EF;&#xFF0C;&#x6BCF;&#x4E2A;&#x4EBA;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x504F;&#x7231;&#x7684;&#x7F16;&#x8F91;&#x5668;&#xFF0C;&#x6709;&#x7684;&#x6210;&#x5458;&#x751A;&#x81F3;&#x4F1A;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x82E5;&#x5E72;&#x4E2A;&#x7F16;&#x8F91;&#x5668;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x4ED4;&#x7EC6;&#x914D;&#x7F6E;&#xFF0C;&#x6BCF;&#x4E2A;&#x7F16;&#x8F91;&#x5668;&#x7684;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x5DEE;&#x5F02;&#xFF0C;&#x8B6C;&#x5982;&#xFF0C;&#x6709;&#x7684;&#x7F16;&#x8F91;&#x5668;&#x5728;&#x6309;TAB&#x65F6;&#x4F1A;&#x7528;TAB&#x7F29;&#x8FDB;&#xFF0C;&#x800C;&#x5176;&#x4ED6;&#x7684;&#x7F16;&#x8F91;&#x5668;&#x53EF;&#x80FD;&#x4F1A;&#x7528;2&#x4E2A;&#x6216;4&#x4E2A;&#x7A7A;&#x683C;&#x6765;&#x4EE3;&#x66FF;&#x3002;&#x5E78;&#x597D;&#xFF0C;&#x6211;&#x4EEC;&#x6709; .editorconfig &#x53EF;&#x4EE5;&#x7F13;&#x89E3;&#x6B64;&#x73B0;&#x8C61;&#xFF0C;&#x76EE;&#x524D;&#x4E3B;&#x6D41;&#x6D4F;&#x89C8;&#x5668;&#x90FD;&#x652F;&#x6301;&#x6B64;&#x5168;&#x5C40;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x7684;&#x4E00;&#x822C;&#x4E5F;&#x4F1A;&#x6709;&#x63D2;&#x4EF6;&#x6765;&#x63D0;&#x4F9B;&#x652F;&#x6301;&#x3002;</p>
+<h3 id="1-1-EditorConfig-&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><a href="#1-1-EditorConfig-&#x662F;&#x4EC0;&#x4E48;&#xFF1F;" class="headerlink" title="1.1 EditorConfig &#x662F;&#x4EC0;&#x4E48;&#xFF1F;"></a>1.1 EditorConfig &#x662F;&#x4EC0;&#x4E48;&#xFF1F;</h3><p>EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs.</p>
+<p>&#x7B80;&#x8A00;&#x4E4B;&#xFF0C;EditorConfig &#x7528;&#x6765;&#x5B9A;&#x4E49;&#x4EE3;&#x7801;&#x683C;&#x5F0F;&#xFF0C;&#x4EE5;&#x5B9E;&#x73B0;&#x4E0D;&#x540C;&#x7F16;&#x8F91;&#x5668;&#x3001;&#x4E0D;&#x540C;&#x9879;&#x76EE;&#x6210;&#x5458;&#x4E4B;&#x95F4;&#x7EDF;&#x4E00;&#x4EE3;&#x7801;&#x98CE;&#x683C;&#x3002;</p>
+<p>EditorConfig &#x4F7F;&#x7528; .editorconfig &#x6765;&#x5B58;&#x50A8;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;EditorConfig &#x63D2;&#x4EF6;&#x4F1A;&#x4ECE;&#x6587;&#x4EF6;&#x6240;&#x5728;&#x76EE;&#x5F55;&#x5F00;&#x59CB;&#x9010;&#x7EA7;&#x5411;&#x4E0A;&#x67E5;&#x627E; .editorconfig&#xFF0C;&#x5E76;&#x5C06;&#x89C4;&#x5219;&#x6309;&#x7167; CSS &#x7C7B;&#x4F3C;&#x7684;&#x89C4;&#x5219;&#x5408;&#x5E76;&#xFF0C;&#x76F4;&#x5230;&#x627E;&#x5230;&#x5305;&#x542B; root = true &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E3A;&#x6B62;&#x3002;</p>
+<p><strong><em>Windows &#x7528;&#x6237; &#xFF1A;Windows &#x7528;&#x6237;&#x521B;&#x5EFA;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x9700;&#x5C06;&#x6587;&#x4EF6;&#x547D;&#x540D;&#x4E3A; <code>.editorconfig.</code> &#xFF0C;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x4F1A;&#x81EA;&#x52A8;&#x5C06;&#x5176;&#x91CD;&#x547D;&#x540D;&#x4E3A; <code>.editorconfig</code></em></strong></p>
+<h3 id="1-2-&#x7F16;&#x8F91;&#x5668;&#x652F;&#x6301;&#x60C5;&#x51B5;"><a href="#1-2-&#x7F16;&#x8F91;&#x5668;&#x652F;&#x6301;&#x60C5;&#x51B5;" class="headerlink" title="1.2 &#x7F16;&#x8F91;&#x5668;&#x652F;&#x6301;&#x60C5;&#x51B5;"></a>1.2 &#x7F16;&#x8F91;&#x5668;&#x652F;&#x6301;&#x60C5;&#x51B5;</h3><p>&#x539F;&#x751F;&#x652F;&#x6301;&#x7684;&#x5E38;&#x7528;&#x7F16;&#x8F91;&#x5668;:</p>
+<ul>
+<li>BBEDIT</li>
+<li>IntellijIDEA</li>
+<li>WebStorm</li>
+</ul>
+<p>&#x7531;&#x63D2;&#x4EF6;&#x652F;&#x6301;&#x7684;&#x5E38;&#x7528;&#x7F16;&#x8F91;&#x5668;&#xFF1A;</p>
+<ul>
+<li>Atom</li>
+<li>Brackets</li>
+<li>Coda</li>
+<li>eclipse</li>
+<li>Emacs</li>
+<li>gedit</li>
+<li>NetBeans</li>
+<li>Sublime Text</li>
+<li>PhpStorm</li>
+<li>pyCharm</li>
+<li>notepad++</li>
+<li>Visual Studio</li>
+<li>textmate</li>
+<li>vim</li>
+<li>Xcode</li>
+</ul>
+<p>&#x53EF;&#x67E5;&#x9605; <a href="">http://editorconfig.org/#download</a> &#x67E5;&#x770B;&#x8BE6;&#x7EC6;&#x60C5;&#x51B5;&#x5E76;&#x67E5;&#x627E;&#x76F8;&#x5E94;&#x7684;&#x63D2;&#x4EF6;&#x3002;</p>
+<h3 id="1-3-&#x5177;&#x4F53;&#x914D;&#x7F6E;"><a href="#1-3-&#x5177;&#x4F53;&#x914D;&#x7F6E;" class="headerlink" title="1.3 &#x5177;&#x4F53;&#x914D;&#x7F6E;"></a>1.3 &#x5177;&#x4F53;&#x914D;&#x7F6E;</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># EditorConfig &#x8D85;&#x7EA7;&#x68D2;: http://EditorConfig.org</span><br><span class="line"># &#x6700;&#x9876;&#x5C42;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x4E0D;&#x4F1A;&#x518D;&#x7EE7;&#x7EED;&#x5F80;&#x4E0A;&#x67E5;&#x627E;&#x914D;&#x7F6E;</span><br><span class="line">root = true</span><br><span class="line"></span><br><span class="line"># &#x5339;&#x914D;&#x6240;&#x6709;&#x6587;&#x4EF6;</span><br><span class="line">[*]</span><br><span class="line"># &#x4F7F;&#x7528;Unix&#x98CE;&#x683C;&#x7684;&#x6362;&#x884C;&#x63A7;&#x5236;</span><br><span class="line">end_of_line = lf</span><br><span class="line"># &#x5728;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#x7ED3;&#x5C3E;&#x6DFB;&#x52A0;Unix&#x98CE;&#x683C;&#x7684;&#x7A7A;&#x884C;</span><br><span class="line">insert_final_newline = true</span><br><span class="line"># &#x53BB;&#x9664;&#x884C;&#x5C3E;&#x591A;&#x4F59;&#x7684;&#x7A7A;&#x683C;</span><br><span class="line">trim_trailing_whitespace = true</span><br><span class="line"># &#x8BBE;&#x5B9A;&#x6587;&#x4EF6;&#x7684;&#x7F16;&#x7801;&#x4E3A;UTF-8</span><br><span class="line">charset = utf-8</span><br><span class="line"># &#x7F29;&#x8FDB;&#x98CE;&#x683C;&#x4E3A;&#x7A7A;&#x683C;</span><br><span class="line">indent_style = space</span><br><span class="line"># &#x7F29;&#x8FDB;4&#x4E2A;&#x7A7A;&#x683C;</span><br><span class="line">indent_size = 4</span><br><span class="line"></span><br><span class="line"># &#x5339;&#x914D;JSON&#x6587;&#x4EF6;</span><br><span class="line">[*.json]</span><br><span class="line"># &#x7F29;&#x8FDB;2&#x4E2A;&#x7A7A;&#x683C;</span><br><span class="line">indent_size = 2</span><br></pre></td></tr></table></figure>
+<p>&#x8BF7;&#x5728; <a href="">http://10.123.10.150/.editorconfig</a> &#x4E0B;&#x8F7D;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5E76;&#x653E;&#x5230;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x7684;&#x5408;&#x9002;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x53EF;&#x67E5;&#x9605; <a href="">http://editorconfig.org/#file-format-details</a> &#x4E86;&#x89E3;&#x66F4;&#x591A;&#x7684;&#x53EF;&#x914D;&#x7F6E;&#x9879;&#x3002;</p>
+<h2 id="2-&#x7F16;&#x7801;&#x98CE;&#x683C;&#x548C;&#x89C4;&#x8303;"><a href="#2-&#x7F16;&#x7801;&#x98CE;&#x683C;&#x548C;&#x89C4;&#x8303;" class="headerlink" title="2. &#x7F16;&#x7801;&#x98CE;&#x683C;&#x548C;&#x89C4;&#x8303;"></a>2. &#x7F16;&#x7801;&#x98CE;&#x683C;&#x548C;&#x89C4;&#x8303;</h2><p>Javascript &#x4F5C;&#x4E3A;&#x4E00;&#x95E8;&#x77ED;&#x65F6;&#x95F4;&#x5185;&#x521B;&#x9020;&#x51FA;&#x6765;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x6709;&#x7740;&#x5176;&#x5148;&#x5929;&#x6027;&#x7684;&#x7F3A;&#x9677;&#xFF0C;&#x6709;&#x4E9B;&#x4E0D;&#x597D;&#x7684;&#x7279;&#x6027;&#x4E0D;&#x9002;&#x5408;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;&#x3002;&#x56E0;&#x6B64;&#x6709;&#x5FC5;&#x8981;&#x505A;&#x51FA;&#x4E00;&#x4E9B;&#x7EA6;&#x675F;&#x6765;&#x4FDD;&#x8BC1;&#x8FD9;&#x95E8;&#x8BED;&#x8A00;&#x7684;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#x3002;</p>
+<h3 id="2-1-&#x9009;&#x578B;"><a href="#2-1-&#x9009;&#x578B;" class="headerlink" title="2.1 &#x9009;&#x578B;"></a>2.1 &#x9009;&#x578B;</h3><hr>
+<p>&#x76EE;&#x524D;&#x4E1A;&#x754C;&#x5BF9;&#x6B64;&#x6709;&#x591A;&#x4E2A;&#x7C7B;&#x4F3C;&#x4F46;&#x5E76;&#x4E0D;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;&#x7EA6;&#x675F;&#x89C4;&#x8303;&#x3002;&#x4E0B;&#x9762;&#x5C06;&#x5177;&#x4F53;&#x5206;&#x6790;&#xFF0C;&#x9009;&#x62E9;&#x66F4;&#x52A0;&#x9002;&#x5408;&#x6211;&#x4EEC;&#x4E1A;&#x52A1;&#x573A;&#x666F;&#x7684;&#x89C4;&#x8303;&#x3002;</p>
+<h4 id="2-1-1-JSlint"><a href="#2-1-1-JSlint" class="headerlink" title="2.1.1 JSlint"></a>2.1.1 JSlint</h4><p>JSLint&#x7531;Javascript&#x4E1A;&#x754C;&#x5927;&#x5496;Douglas Crockford&#x4E8E;2012&#x5E74;&#x5F00;&#x53D1;&#x3002;</p>
+<p>&#x4F18;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x5B8C;&#x6210;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;</li>
+</ul>
+<p>&#x7F3A;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>JSLint&#x4E0D;&#x5B58;&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x6539;&#x53D8;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#xFF0C;&#x90A3;&#x5C31;&#x5B58;&#x5728;&#x95EE;&#x9898;</li>
+<li>&#x6709;&#x9650;&#x7684;&#x914D;&#x7F6E;&#x9009;&#x9879;&#xFF0C;&#x8BB8;&#x591A;&#x89C4;&#x5219;&#x4E0D;&#x80FD;&#x7981;&#x6389;</li>
+<li>&#x4E0D;&#x80FD;&#x589E;&#x52A0;&#x4E2A;&#x6027;&#x5316;&#x89C4;&#x5219;</li>
+<li>&#x6CA1;&#x6709;&#x6587;&#x6863;&#x8BB0;&#x5F55;&#x89C4;&#x5219;</li>
+<li>&#x5F88;&#x96BE;&#x5F04;&#x6E05;&#x695A;&#x54EA;&#x4E2A;&#x89C4;&#x5219;&#x5F15;&#x8D77;&#x7684;&#x9519;&#x8BEF;</li>
+</ul>
+<h4 id="2-1-2-JShint"><a href="#2-1-2-JShint" class="headerlink" title="2.1.2 JShint"></a>2.1.2 JShint</h4><p>&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x53EF;&#x914D;&#x7F6E;&#x7684;JSLint&#x7248;&#x672C;&#xFF0C;JSHint&#x88AB;&#x5F00;&#x53D1;&#x51FA;&#x6765;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x6BCF;&#x4E2A;&#x89C4;&#x5219;&#xFF0C;&#x5C06;&#x5176;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x8FD9;&#x6837;&#x5728;&#x5927;&#x9879;&#x76EE;&#x4E2D;&#x53EF;&#x4EE5;&#x5BB9;&#x6613;&#x4F7F;&#x7528;&#x3002;JSHint&#x5BF9;&#x6BCF;&#x4E2A;&#x89C4;&#x5219;&#x6709;&#x597D;&#x7684;&#x6587;&#x6863;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x51C6;&#x786E;&#x77E5;&#x9053;&#x6BCF;&#x4E2A;&#x89C4;&#x5219;&#x7684;&#x4F5C;&#x7528;&#x3002;&#x5C06;&#x5176;&#x96C6;&#x6210;&#x5230;&#x7F16;&#x8F91;&#x5668;&#x4E5F;&#x662F;&#x7B80;&#x5355;&#x7684;&#x3002;</p>
+<p>&#x4F18;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x5927;&#x591A;&#x662F;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;</li>
+<li>&#x652F;&#x6301;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x5927;&#x9879;&#x76EE;&#x4E2D;&#x5BB9;&#x6613;&#x4F7F;&#x7528;</li>
+<li>&#x5DF2;&#x7ECF;&#x652F;&#x6301;&#x8BB8;&#x591A;&#x7C7B;&#x5E93;&#xFF0C;&#x50CF;jQuery&#x3001;QUnit&#x3001;NodeJS&#x3001;Mocha&#x7B49;</li>
+<li>&#x652F;&#x6301;&#x57FA;&#x672C;&#x7684;ES6</li>
+</ul>
+<p>&#x7F3A;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x96BE;&#x4E8E;&#x77E5;&#x9053;&#x54EA;&#x4E2A;&#x89C4;&#x5219;&#x4EA7;&#x751F;&#x9519;&#x8BEF;</li>
+<li>&#x5B58;&#x5728;&#x4E24;&#x7C7B;&#x9009;&#x9879;&#xFF1A;&#x5F3A;&#x5236;&#x9009;&#x9879;&#x548C;&#x677E;&#x6563;&#x9009;&#x9879;&#x3002;&#x4F7F;&#x5F97;&#x914D;&#x7F6E;&#x6709;&#x4E9B;&#x6DF7;&#x4E71;</li>
+<li>&#x4E0D;&#x652F;&#x6301;&#x81EA;&#x5B9A;&#x4E49;&#x89C4;&#x5219;</li>
+</ul>
+<h4 id="2-1-3-ESlint"><a href="#2-1-3-ESlint" class="headerlink" title="2.1.3 ESlint"></a>2.1.3 ESlint</h4><p>ESLint&#x7531; JavaScript &#x7EA2;&#x5B9D;&#x4E66; &#x4F5C;&#x8005; Nicholas C. Zakas &#x7F16;&#x5199;&#xFF0C;&#x662F;&#x6700;&#x65B0;&#x51FA;&#x6765;&#x7684;&#x5DE5;&#x5177;&#x3002;&#x5B83;&#x88AB;&#x8BBE;&#x8BA1;&#x7684;&#x5BB9;&#x6613;&#x62D3;&#x5C55;&#x3001;&#x62E5;&#x6709;&#x5927;&#x91CF;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x89C4;&#x5219;&#x3001;&#x5BB9;&#x6613;&#x7684;&#x901A;&#x8FC7;&#x63D2;&#x4EF6;&#x6765;&#x5B89;&#x88C5;&#x3002;&#x5B83;&#x7ED9;&#x51FA;&#x51C6;&#x786E;&#x7684;&#x8F93;&#x51FA;&#xFF0C;&#x800C;&#x4E14;&#x5305;&#x62EC;&#x89C4;&#x5219;&#x540D;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x54EA;&#x4E2A;&#x89C4;&#x5219;&#x9020;&#x6210;&#x4E86;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x4F18;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x7075;&#x6D3B;&#xFF1A;&#x4EFB;&#x4F55;&#x89C4;&#x5219;&#x90FD;&#x53EF;&#x4EE5;&#x5F00;&#x542F;&#x95ED;&#x5408;&#xFF0C;&#x4EE5;&#x53CA;&#x6709;&#x4E9B;&#x89C4;&#x5219;&#x6709;&#x4E9B;&#x989D;&#x5916;&#x914D;&#x7F6E;</li>
+<li>&#x5F88;&#x5BB9;&#x6613;&#x62D3;&#x5C55;&#x548C;&#x6709;&#x9700;&#x8981;&#x53EF;&#x7528;&#x63D2;&#x4EF6;</li>
+<li>&#x5BB9;&#x6613;&#x7406;&#x89E3;&#x4EA7;&#x51FA;</li>
+<li>&#x5305;&#x542B;&#x4E86;&#x5728;&#x5176;&#x4ED6;&#x68C0;&#x67E5;&#x5668;&#x4E2D;&#x4E0D;&#x53EF;&#x7528;&#x7684;&#x89C4;&#x5219;&#xFF0C;&#x4F7F;&#x5F97;ESLint&#x5728;&#x9519;&#x8BEF;&#x68C0;&#x67E5;&#x4E0A;&#x66F4;&#x6709;&#x7528;</li>
+<li>&#x652F;&#x6301;ES6&#xFF0C;&#x552F;&#x4E00;&#x652F;&#x6301;JSX&#x7684;&#x5DE5;&#x5177;</li>
+<li>&#x652F;&#x6301;&#x81EA;&#x5B9A;&#x4E49;&#x62A5;&#x544A;</li>
+</ul>
+<p>&#x7F3A;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x914D;&#x7F6E;</li>
+<li>&#x901F;&#x5EA6;&#x6162;&#xFF0C;&#x4F46;&#x8FD9;&#x4E0D;&#x662F;&#x4E3B;&#x8981;&#x95EE;&#x9898;</li>
+</ul>
+<p>&#x652F;&#x6301;&#x63D2;&#x4EF6;&#x5316;&#x7684; ESLint &#x7075;&#x6D3B;&#x6027;&#x6700;&#x597D;&#xFF0C;&#x540C;&#x65F6;&#x53EF;&#x914D;&#x7F6E;&#x9879;&#x8F83;&#x4E3A;&#x4E30;&#x5BCC;&#xFF0C;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x5B8C;&#x5584;&#xFF0C;&#x793E;&#x533A;&#x6D3B;&#x8DC3;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x9009;&#x5B9A; ESLint &#x4F5C;&#x4E3A;&#x4E3B;&#x8981;&#x7684;&#x4EE3;&#x7801;&#x98CE;&#x683C;&#x68C0;&#x6D4B;&#x5DE5;&#x5177;&#x3002;</p>
+<h3 id="2-2-&#x914D;&#x7F6E;"><a href="#2-2-&#x914D;&#x7F6E;" class="headerlink" title="2.2 &#x914D;&#x7F6E;"></a>2.2 &#x914D;&#x7F6E;</h3><hr>
+<p>ESLint &#x7531;&#x4E00;&#x4E2A;&#x4E3B;&#x8981;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x548C;&#x53EF;&#x9009;&#x7684;&#x82E5;&#x5E72;&#x4E2A;&#x63D2;&#x4EF6;&#x7EC4;&#x6210;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x5F53;&#x5C06;&#x6B64;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x653E;&#x7F6E;&#x5728;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x5939;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x3002;&#x5982;&#x679C;&#x67D0;&#x4E9B;&#x7279;&#x522B;&#x7684;&#x76EE;&#x5F55;&#x9700;&#x8981;&#x989D;&#x5916;&#x5B9A;&#x5236;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x5728;&#x8BE5;&#x76EE;&#x5F55;&#x4E0B;&#x65B0;&#x589E;&#x540C;&#x540D;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5373;&#x53EF;&#x3002;</p>
+<p>ESLint &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E3B;&#x8981;&#x7531;&#x4E09;&#x5927;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF0C;&#x6B64;&#x5916;&#x8FD8;&#x6709;&#x82E5;&#x5E72;&#x7279;&#x6B8A;&#x7684;&#x914D;&#x7F6E;&#x5B57;&#x6BB5;&#x3002;</p>
+<h3 id="env"><a href="#env" class="headerlink" title="env"></a>env</h3><p>&#x914D;&#x7F6E;&#x4EE3;&#x7801;&#x7684;&#x76EE;&#x6807;&#x6267;&#x884C;&#x73AF;&#x5883;&#x3002;</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">	&quot;env&quot;: {</span><br><span class="line">		&quot;browser&quot;: true&#xFF0C; # &#x652F;&#x6301;&#x6D4F;&#x89C8;&#x5668;&#x73AF;&#x5883;</span><br><span class="line">		&quot;node&quot;: true,	# &#x652F;&#x6301;node&#x73AF;&#x5883;</span><br><span class="line">		&quot;amd&quot;: true,	# &#x652F;&#x6301;AMD&#x52A0;&#x8F7D;&#x5668;</span><br><span class="line">		&quot;jquery&quot;: ture	# &#x652F;&#x6301;jQuery&#x548C;Zeptojs</span><br><span class="line">	}</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h3 id="globals"><a href="#globals" class="headerlink" title="globals"></a>globals</h3><p>&#x914D;&#x7F6E;&#x4E00;&#x4E9B;&#x989D;&#x5916;&#x9700;&#x8981;&#x7684;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x540D;&#x3002;</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">	&quot;globals&quot;: {</span><br><span class="line">		&quot;seajs&quot;: true, # &#x5B9A;&#x4E49;seajs&#x5168;&#x5C40;&#x53D8;&#x91CF;</span><br><span class="line">		&quot;Promise&quot;: true #&#x5B9A;&#x4E49;Promise&#x5168;&#x5C40;&#x53D8;&#x91CF;</span><br><span class="line">	}</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h3 id="rules"><a href="#rules" class="headerlink" title="rules"></a>rules</h3><p>&#x5177;&#x4F53;&#x914D;&#x7F6E;&#x9700;&#x8981;&#x7684;&#x5F88;&#x591A;&#x89C4;&#x5219;&#x8BE6;&#x60C5;&#x3002;</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">	&quot;rules&quot;: {</span><br><span class="line">		&quot;strict&quot;: [1, &quot;function&quot;], # &#x8981;&#x6C42;&#x4E25;&#x683C;&#x6A21;&#x5F0F;</span><br><span class="line">        &quot;quotes&quot;: [1, &quot;single&quot;], # &#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x5355;&#x5F15;&#x53F7;</span><br><span class="line">        &quot;quote-props&quot;: 0, # &#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x5C5E;&#x6027;&#x540D;&#x7684;&#x98CE;&#x683C;</span><br><span class="line">        &quot;no-inner-declarations&quot;: [1, &quot;both&quot;], # &#x4E0D;&#x5EFA;&#x8BAE;&#x5728;&#x4EE3;&#x7801;&#x5757;&#x5185;&#x90E8;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x6216;&#x51FD;&#x6570;</span><br><span class="line">        &quot;no-case-declarations&quot;: 1, # &#x7981;&#x6B62;&#x5728;case&#x6BB5;&#x843D;&#x4E2D;&#x5B9A;&#x4E49;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x53D8;&#x91CF;</span><br><span class="line">        &quot;no-extra-semi&quot;: 2, # &#x591A;&#x4F59;&#x7684;&#x5206;&#x53F7;</span><br><span class="line">        &quot;no-extra-parens&quot;: 0, # &#x591A;&#x4F59;&#x7684;&#x62EC;&#x53F7;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<p>&#x8BF7;&#x5728; <a href="">http://10.123.10.150/.eslintrc</a> &#x4E0B;&#x8F7D;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5E76;&#x653E;&#x5230;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x7684;&#x5408;&#x9002;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p><strong><em>&#x5177;&#x4F53;&#x7684;&#x914D;&#x7F6E;&#x8FD8;&#x9700;&#x8981;&#x5728;&#x5B9E;&#x8DF5;&#x4E2D;&#x4E0D;&#x65AD;&#x603B;&#x7ED3;&#x548C;&#x4F18;&#x5316;&#xFF0C;&#x672C;&#x914D;&#x7F6E;&#x5C06;&#x6301;&#x7EED;&#x4FDD;&#x6301;&#x66F4;&#x65B0;&#x3002;</em></strong></p>
+<h3 id="2-3-&#x4E3A;&#x7F16;&#x8F91;&#x5668;&#x6DFB;&#x52A0;&#x652F;&#x6301;"><a href="#2-3-&#x4E3A;&#x7F16;&#x8F91;&#x5668;&#x6DFB;&#x52A0;&#x652F;&#x6301;" class="headerlink" title="2.3 &#x4E3A;&#x7F16;&#x8F91;&#x5668;&#x6DFB;&#x52A0;&#x652F;&#x6301;"></a>2.3 &#x4E3A;&#x7F16;&#x8F91;&#x5668;&#x6DFB;&#x52A0;&#x652F;&#x6301;</h3><h4 id="2-3-1-&#x5168;&#x5C40;&#x5B89;&#x88C5;-ESLint"><a href="#2-3-1-&#x5168;&#x5C40;&#x5B89;&#x88C5;-ESLint" class="headerlink" title="2.3.1 &#x5168;&#x5C40;&#x5B89;&#x88C5; ESLint"></a>2.3.1 &#x5168;&#x5C40;&#x5B89;&#x88C5; ESLint</h4><p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5B89;&#x88C5;ESLint&#x7684;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;npm&#x5B89;&#x88C5;&#x5373;&#x53EF;&#xFF0C;&#x5982;&#x679C;&#x5904;&#x4E8E;&#x516C;&#x53F8;&#x5185;&#x7F51;&#xFF0C;&#x4E5F;&#x4E00;&#x5B9A;&#x4E0D;&#x8981;&#x7528; <code>tnpm</code> &#x6765;&#x5B89;&#x88C5;&#xFF0C;&#x4E0D;&#x7136; Visual Studio code &#x7684; eslint &#x63D2;&#x4EF6;&#x4F1A;&#x63D0;&#x793A;&#x627E;&#x4E0D;&#x5230; ESLint&#xFF0C;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4EE3;&#x7406;&#xFF0C;&#x6216;&#x8005;&#x63D2;&#x4E2A;&#x65E0;&#x7EBF;&#x7F51;&#x5361;&#x8FDE;&#x63A5;&#x5230; staff-wifi &#x6765;&#x4E34;&#x65F6;&#x5B89;&#x88C5;&#x3002;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># &#x76F4;&#x63A5;&#x4F7F;&#x7528;npm&#x5B89;&#x88C5;</span><br><span class="line">npm install -g eslint</span><br></pre></td></tr></table></figure>
+<p><strong><em>&#x4F7F;&#x7528;Unix&#x7CFB;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x9700;&#x8981;sudo&#x6743;&#x9650;</em></strong></p>
+<h4 id="2-3-2-&#x4E3A;-SublimeText-&#x6DFB;&#x52A0;&#x652F;&#x6301;"><a href="#2-3-2-&#x4E3A;-SublimeText-&#x6DFB;&#x52A0;&#x652F;&#x6301;" class="headerlink" title="2.3.2 &#x4E3A; SublimeText &#x6DFB;&#x52A0;&#x652F;&#x6301;"></a>2.3.2 &#x4E3A; SublimeText &#x6DFB;&#x52A0;&#x652F;&#x6301;</h4><p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5B89;&#x88C5;SublimeText&#x7684;&#x5305;&#x7BA1;&#x7406;&#x5668;PackageControl&#xFF0C;SublimeText 2/3&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x53BB; <a href="https://packagecontrol.io/installation" target="_blank" rel="external">PackageControl</a> &#x7F51;&#x7AD9;&#x4E0A;&#x83B7;&#x53D6;&#x5B89;&#x88C5;&#x6307;&#x5357;&#x3002;&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5373;&#x53EF;&#x4F7F;&#x7528; <a href="https://packagecontrol.io/installation" target="_blank" rel="external">PackageControl</a> &#x5B89;&#x88C5;&#x6240;&#x9700;&#x7684;&#x5982;&#x4E0B;&#x4E24;&#x4E2A;&#x5305;&#xFF1A;</p>
+<ul>
+<li>SublimeLinter</li>
+<li>SublimeLinter-contrib-eslint</li>
+</ul>
+<p>&#x5B89;&#x88C5;&#x540E;&#xFF0C;&#x5373;&#x53EF;&#x5728; <code>Tools &gt; SublimeLinter</code> &#x4E2D;&#x4FEE;&#x6539;&#x82E5;&#x5E72;&#x914D;&#x7F6E;:</p>
+<ul>
+<li>&#x63A8;&#x8350;&#x8BBE;&#x7F6E; <code>Lint Mode</code> &#x4E3A; <code>Background</code>&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x540E;&#x53F0;&#x9759;&#x9ED8;&#x66F4;&#x65B0;&#x51C6;&#x5B9E;&#x65F6;&#x76D1;&#x6D4B;&#x4E86;&#x3002;</li>
+<li>&#x63A8;&#x8350;&#x8BBE;&#x7F6E; <code>Mark Style</code> &#x4E3A; <code>Fill</code>&#xFF0C;&#x83B7;&#x5F97;&#x66F4;&#x660E;&#x663E;&#x7684;&#x63D0;&#x793A;&#x3002;</li>
+</ul>
+<p><img src="/2016/06/05/westock-coding-standard/sublimelinter.jpg" alt="SublimeLinter"></p>
+<p>&#x5982;&#x4F55;&#x4F7F;&#x7528; <a href="https://packagecontrol.io/installation" target="_blank" rel="external">PackageControl</a> &#x5B89;&#x88C5;&#x5305;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003; <a href="">https://packagecontrol.io/installation</a>&#x3002;</p>
+<h4 id="2-3-4-&#x4E3A;-Visual-Studio-Code-&#x6DFB;&#x52A0;&#x652F;&#x6301;"><a href="#2-3-4-&#x4E3A;-Visual-Studio-Code-&#x6DFB;&#x52A0;&#x652F;&#x6301;" class="headerlink" title="2.3.4 &#x4E3A; Visual Studio Code &#x6DFB;&#x52A0;&#x652F;&#x6301;"></a>2.3.4 &#x4E3A; Visual Studio Code &#x6DFB;&#x52A0;&#x652F;&#x6301;</h4><p>VSC&#x81EA;&#x5E26;&#x63D2;&#x4EF6;&#x7BA1;&#x7406;&#xFF0C;&#x56E0;&#x6B64;&#x65E0;&#x9700;&#x50CF;SublimeText&#x4E00;&#x6837;&#x989D;&#x5916;&#x5B89;&#x88C5;&#x63D2;&#x4EF6;&#x7BA1;&#x7406;&#x5668;&#x3002;&#x5728;&#x7F16;&#x8F91;&#x5668;&#x7A97;&#x53E3;&#x4E2D;&#x6309;&#x4E0B; <code>CTRL</code> + <code>SHIFT</code> + <code>P</code>(Mac&#x4E2D;&#x5E94;&#x4E3A; <code>COMMAND</code> + <code>SHIFT</code> + <code>p</code>)&#xFF0C;&#x7136;&#x540E;&#x8F93;&#x5165;ext install&#x5E76;&#x56DE;&#x8F66;&#xFF0C;&#x518D;&#x63A5;&#x7740;&#x8F93;&#x5165;&#x63D2;&#x4EF6;&#x540D;&#xFF0C;&#x67E5;&#x627E;&#x5230;&#x63D2;&#x4EF6;&#x540E;&#xFF0C;&#x70B9;&#x63D2;&#x4EF6;&#x680F;&#x53F3;&#x4FA7;&#x7684;&#x4E00;&#x6735;&#x4E91;&#x72B6;&#x7684;&#x4E0B;&#x8F7D;&#x6309;&#x94AE;&#x5373;&#x53EF;&#x4E0B;&#x8F7D;&#xFF0C;&#x9700;&#x8981;&#x5B89;&#x88C5;&#x5982;&#x4E0B;&#x4E24;&#x4E2A;&#x5305;&#xFF1A;</p>
+<ul>
+<li>EditorConfig for VS Code</li>
+<li>ESLint</li>
+</ul>
+<p>&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x91CD;&#x542F;&#x7F16;&#x8F91;&#x5668;&#x540E;&#x5373;&#x53EF;&#x652F;&#x6301;&#x3002;</p>
+<h3 id="2-4-&#x9644;&#x4E0A;&#x56E2;&#x961F;&#x6240;&#x91C7;&#x7528;&#x7684;&#x89C4;&#x8303;&#x7EC6;&#x5219;&#xFF1A;"><a href="#2-4-&#x9644;&#x4E0A;&#x56E2;&#x961F;&#x6240;&#x91C7;&#x7528;&#x7684;&#x89C4;&#x8303;&#x7EC6;&#x5219;&#xFF1A;" class="headerlink" title="2.4 &#x9644;&#x4E0A;&#x56E2;&#x961F;&#x6240;&#x91C7;&#x7528;&#x7684;&#x89C4;&#x8303;&#x7EC6;&#x5219;&#xFF1A;"></a>2.4 &#x9644;&#x4E0A;&#x56E2;&#x961F;&#x6240;&#x91C7;&#x7528;&#x7684;&#x89C4;&#x8303;&#x7EC6;&#x5219;&#xFF1A;</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">    &quot;parserOptions&quot;: {</span><br><span class="line">        &quot;ecmaVersion&quot;: 5</span><br><span class="line">    },</span><br><span class="line">    &quot;env&quot;: {</span><br><span class="line">        &quot;browser&quot;: true,</span><br><span class="line">        &quot;amd&quot;: true,</span><br><span class="line">        &quot;node&quot;: true,</span><br><span class="line">        &quot;jquery&quot;: true</span><br><span class="line">    },</span><br><span class="line">    &quot;globals&quot;: {</span><br><span class="line">        &quot;seajs&quot;: true,</span><br><span class="line">        &quot;G_SPEED_TTL&quot;: true,</span><br><span class="line">        &quot;iScroll&quot;: true,</span><br><span class="line">        &quot;Promise&quot;: true</span><br><span class="line">    },</span><br><span class="line">    &quot;rules&quot;: {</span><br><span class="line">        &quot;strict&quot;: [1, &quot;function&quot;],                // &#x8981;&#x6C42;&#x4E25;&#x683C;&#x6A21;&#x5F0F;</span><br><span class="line"></span><br><span class="line">        //&#x8B66;&#x544A;</span><br><span class="line">        &quot;quotes&quot;: [1, &quot;single&quot;],                  // &#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x5355;&#x5F15;&#x53F7;</span><br><span class="line">        &quot;quote-props&quot;: 0,                         // &#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x5C5E;&#x6027;&#x540D;&#x7684;&#x98CE;&#x683C;</span><br><span class="line">        &quot;no-inner-declarations&quot;: [1, &quot;both&quot;],     // &#x4E0D;&#x5EFA;&#x8BAE;&#x5728;{}&#x4EE3;&#x7801;&#x5757;&#x5185;&#x90E8;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x6216;&#x51FD;&#x6570;</span><br><span class="line">        &quot;no-case-declarations&quot;: 1,                // &#x7981;&#x6B62;&#x5728;case&#x6BB5;&#x843D;&#x4E2D;&#x5B9A;&#x4E49;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x53D8;&#x91CF;</span><br><span class="line">        &quot;no-extra-semi&quot;: 2,                       // &#x591A;&#x4F59;&#x7684;&#x5206;&#x53F7;</span><br><span class="line">        &quot;no-extra-parens&quot;: 0,                     // &#x591A;&#x4F59;&#x7684;&#x62EC;&#x53F7;,&#x5141;&#x8BB8;&#x56E0;&#x4E3A; no-cond-assign=&apos;except-parens&apos;</span><br><span class="line">        &quot;no-empty&quot;: [1, {&quot;allowEmptyCatch&quot;: true}], // &#x7A7A;&#x4EE3;&#x7801;&#x5757;</span><br><span class="line">        &quot;no-use-before-define&quot;: [0, {&quot;functions&quot;: false, &quot;classes&quot;: true}],    // &#x4F7F;&#x7528;&#x524D;&#x672A;&#x5B9A;&#x4E49;</span><br><span class="line">        //&quot;complexity&quot;: [1, 10],                    // &#x5708;&#x590D;&#x6742;&#x5EA6;&#x5927;&#x4E8E;10 &#x8B66;&#x544A;</span><br><span class="line">        &quot;no-console&quot;: 1,                          // &#x4E0D;&#x5141;&#x8BB8;&#x6709;console</span><br><span class="line">        &quot;no-debugger&quot;: 2,                         // debugger &#x8C03;&#x8BD5;&#x4EE3;&#x7801;&#x672A;&#x5220;&#x9664;</span><br><span class="line">        &quot;no-dupe-args&quot;: 2,                        // &#x53C2;&#x6570;&#x91CD;&#x590D;</span><br><span class="line"></span><br><span class="line">        //&#x5E38;&#x89C1;&#x9519;&#x8BEF;</span><br><span class="line">        &quot;semi&quot;: 2,                                // &#x8981;&#x6C42;&#x5206;&#x53F7;</span><br><span class="line">        &quot;no-unexpected-multiline&quot;: 2,             // &#x884C;&#x5C3E;&#x7F3A;&#x5C11;&#x5206;&#x53F7;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x4E00;&#x4E9B;&#x610F;&#x5916;&#x60C5;&#x51B5;</span><br><span class="line">        &quot;comma-dangle&quot;: [2, &quot;never&quot;],             // &#x5B9A;&#x4E49;&#x6570;&#x7EC4;&#x6216;&#x5BF9;&#x8C61;&#x6700;&#x540E;&#x591A;&#x4F59;&#x7684;&#x9017;&#x53F7;</span><br><span class="line">        &quot;no-cond-assign&quot;: [2, &quot;except-parens&quot;],   // &#x6761;&#x4EF6;&#x8BED;&#x53E5;&#x4E2D;&#x7981;&#x6B62;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;,&#x9664;&#x975E;&#x4F7F;&#x7528;&#x62EC;&#x53F7;&#x5305;&#x88F9;</span><br><span class="line">        &quot;no-alert&quot;: 1,                            // &#x4E0D;&#x5141;&#x8BB8;&#x6709;alert</span><br><span class="line">        &quot;no-caller&quot;: 0,                           // &#x4E0D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;arguments.caller&#x548C;arguments.callee,&#x5F71;&#x54CD;&#x811A;&#x672C;&#x89E3;&#x6790;&#x5668;&#x7684;&#x6027;&#x80FD;&#x4F18;&#x5316;</span><br><span class="line">        &quot;no-constant-condition&quot;: 2,               // &#x5E38;&#x91CF;&#x4F5C;&#x4E3A;&#x6761;&#x4EF6;</span><br><span class="line">        &quot;no-dupe-keys&quot;: 2,                        // &#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x91CD;&#x590D;</span><br><span class="line">        &quot;no-duplicate-case&quot;: 2,                   // case&#x91CD;&#x590D;</span><br><span class="line">        &quot;no-empty-character-class&quot;: 2,            // &#x6B63;&#x5219;&#x65E0;&#x6CD5;&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x503C;</span><br><span class="line">        &quot;no-extra-boolean-cast&quot;: 2,               // &#x591A;&#x4F59;&#x7684;&#x611F;&#x53F9;&#x53F7;&#x8F6C;&#x5E03;&#x5C14;&#x578B;</span><br><span class="line">        //&quot;no-extra-semi&quot;: 2,                       // &#x591A;&#x4F59;&#x7684;&#x5206;&#x53F7;</span><br><span class="line">        &quot;no-invalid-regexp&quot;: 2,                   // &#x65E0;&#x6548;&#x7684;&#x6B63;&#x5219;</span><br><span class="line">        &quot;no-func-assign&quot;: 2,                      // &#x51FD;&#x6570;&#x88AB;&#x8D4B;&#x503C;</span><br><span class="line">        &quot;valid-typeof&quot;: 2,                        // &#x65E0;&#x6548;&#x7684;&#x7C7B;&#x578B;&#x5224;&#x65AD;</span><br><span class="line">        &quot;no-unreachable&quot;: 1,                      // &#x4E0D;&#x53EF;&#x80FD;&#x6267;&#x884C;&#x5230;&#x7684;&#x4EE3;&#x7801;</span><br><span class="line">        &quot;no-sparse-arrays&quot;: 2,                    // &#x6570;&#x7EC4;&#x4E2D;&#x591A;&#x51FA;&#x9017;&#x53F7;</span><br><span class="line">        &quot;no-shadow-restricted-names&quot;: 2,          // &#x5173;&#x952E;&#x8BCD;&#x4E0E;&#x547D;&#x540D;&#x51B2;&#x7A81;</span><br><span class="line">        &quot;no-undef&quot;: 2,                            // &#x4E0D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;</span><br><span class="line">        &quot;no-unused-vars&quot;: 1,                      // &#x53D8;&#x91CF;&#x5B9A;&#x4E49;&#x540E;&#x672A;&#x4F7F;&#x7528;</span><br><span class="line">        &quot;no-native-reassign&quot;: 2,                  // &#x7981;&#x6B62;&#x8986;&#x76D6;&#x539F;&#x751F;&#x5BF9;&#x8C61;</span><br><span class="line">        &quot;no-obj-calls&quot;: 2,                        // &#x7981;&#x6B62;&#x5C06;Math&#x548C;JSON&#x4F5C;&#x4E3A;&#x51FD;&#x6570;&#x8C03;&#x7528;</span><br><span class="line">        &quot;no-regex-spaces&quot;: 2,                     // &#x7981;&#x6B62;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x51FA;&#x73B0;&#x591A;&#x4E2A;&#x7A7A;&#x683C;</span><br><span class="line">        &quot;no-irregular-whitespace&quot;: 2,             // &#x7981;&#x6B62;&#x5F02;&#x5E38;&#x7684;&#x7A7A;&#x767D;&#x7B26;&#x51FA;&#x73B0;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6B63;&#x5219;&#x4E4B;&#x5916;</span><br><span class="line">        &quot;no-negated-in-lhs&quot;: 2,                   // &#x7981;&#x6B62;&#x6709;&#x6B67;&#x4E49;&#x7684;in&#x8FD0;&#x7B97;&#xFF0C; if (!x in obj) {..}</span><br><span class="line">        &quot;no-unsafe-finally&quot;: 2,                   // &#x7981;&#x6B62;&#x5728;finally&#x6BB5;&#x843D;&#x4E2D;&#x51FA;&#x73B0;&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x8BED;&#x53E5;</span><br><span class="line">        &quot;use-isnan&quot;: 2,                           // &#x8981;&#x6C42;&#x4F7F;&#x7528;isNaN()&#x6765;&#x5224;&#x65AD;NaN</span><br><span class="line"></span><br><span class="line">        //&#x4EE3;&#x7801;&#x98CE;&#x683C;&#x4F18;&#x5316;</span><br><span class="line">        &quot;valid-jsdoc&quot;: 0,                         // &#x5F3A;&#x5236;&#x4F7F;&#x7528;&#x7B26;&#x5408;JSDoc&#x89C4;&#x8303;&#x7684;&#x6CE8;&#x91CA;</span><br><span class="line">        &quot;semi-spacing&quot;: [1, {&quot;before&quot;: false, &quot;after&quot;: true}], // &#x8981;&#x6C42;&#x5206;&#x53F7;&#x540E;&#x6709;&#x7A7A;&#x683C;</span><br><span class="line">        &quot;no-multi-spaces&quot;: 1,                     // &#x4E0D;&#x5141;&#x8BB8;&#x591A;&#x4E2A;&#x7A7A;&#x683C;</span><br><span class="line">        &quot;key-spacing&quot;: [1, {&quot;beforeColon&quot;: false, &quot;afterColon&quot;: true}], // object&#x76F4;&#x63A5;&#x91CF;&#x5EFA;&#x8BAE;&#x5199;&#x6CD5; : &#x540E;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#x7B7E;&#x540D;&#x7559;&#x7A7A;&#x683C;</span><br><span class="line">        &quot;comma-spacing&quot;: [1, {&quot;before&quot;: false, &quot;after&quot;: true}], // &#x9017;&#x53F7;&#x540E;&#x9762;&#x8DDF;&#x7A7A;&#x683C;</span><br><span class="line">        &quot;eqeqeq&quot;: 1,                              // &#x7528;&#x5168;&#x7B49;&#x6BD4;&#x8F83;&#x548C;&#x5168;&#x7B49;&#x4E0D;&#x6BD4;&#x8F83;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;</span><br><span class="line">        &quot;guard-for-in&quot;: 1,                        // &#x5728;for-in&#x5FAA;&#x73AF;&#x4E2D;&#x4F7F;&#x7528;hasOwnProperty&#x68C0;&#x67E5;&#x662F;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;</span><br><span class="line">        &quot;no-empty-function&quot;: 1,                   // &#x4E0D;&#x5141;&#x8BB8;&#x7A7A;&#x51FD;&#x6570;&#x4F53;&#x7684;&#x51FD;&#x6570;</span><br><span class="line">        &quot;no-eq-null&quot;: 2,                          // &#x4F7F;&#x7528;&#x4E25;&#x683C;&#x6BD4;&#x8F83;&#x6765;&#x5224;&#x65AD;&#x662F;&#x5426;===null,!==null</span><br><span class="line">        &quot;no-eval&quot;: 2,                             // eval&#x662F;&#x90AA;&#x6076;&#x7684;</span><br><span class="line">        &quot;no-implied-eval&quot;: 2,                     // &#x7981;&#x7528;eval&#x7C7B;&#x4F3C;&#x7684;&#x7528;&#x6CD5;</span><br><span class="line">        &quot;no-extra-bind&quot;: 1,                       // &#x4E0D;&#x5141;&#x8BB8;&#x4E0D;&#x5FC5;&#x8981;&#x7684;bind&#x8C03;&#x7528;</span><br><span class="line">        &quot;no-fallthrough&quot;: 1,                      // &#x7981;&#x6B62;case&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7A7F;&#x900F;&#xFF08;&#x7F3A;&#x5C11;break&#xFF09;</span><br><span class="line">        &quot;no-iterator&quot;: 2,                         // &#x7981;&#x6B62;&#x4F7F;&#x7528;__iterator__&#x5C5E;&#x6027;</span><br><span class="line">        &quot;no-proto&quot;: 2,                            // &#x4E0D;&#x9002;&#x7528;__proto__&#x5C5E;&#x6027;</span><br><span class="line">        &quot;no-loop-func&quot;: 2,                        // &#x7981;&#x6B62;&#x5728;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x5B9A;&#x4E49;&#x51FD;&#x6570;</span><br><span class="line">        &quot;no-new-func&quot;: 1,                         // &#x7981;&#x6B62;new Function(...) &#x5199;&#x6CD5;</span><br><span class="line">        &quot;no-lone-blocks&quot;: 1,                      // &#x7981;&#x6B62;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x5D4C;&#x5957;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;</span><br><span class="line">        &quot;no-labels&quot;: 1,                           // &#x65E0;&#x7528;&#x7684;&#x6807;&#x8BB0;(&#x5982;switch&#x548C;for)</span><br><span class="line">        &quot;block-scoped-var&quot;: 1,                    // &#x53D8;&#x91CF;&#x5B9A;&#x4E49;&#x540E;&#x672A;&#x4F7F;&#x7528;</span><br><span class="line">        &quot;dot-location&quot;: [2, &quot;property&quot;],          // &#x6362;&#x884C;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x65B9;&#x6CD5;  &#x70B9;&#x64CD;&#x4F5C;&#x7B26;&#x5E94;&#x5199;&#x5728;&#x884C;&#x9996;</span><br><span class="line">        &quot;dot-notation&quot;: 1,                        // &#x4F18;&#x5148;&#x4F7F;&#x7528;.&#x6765;&#x8C03;&#x7528;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x800C;&#x4E0D;&#x662F;&#x4E2D;&#x62EC;&#x53F7;</span><br><span class="line">        &quot;no-extend-native&quot;: 0,                    // &#x7981;&#x6B62;&#x6269;&#x5C55;&#x539F;&#x751F;&#x5BF9;&#x8C61;</span><br><span class="line">        &quot;no-floating-decimal&quot;: 0,                 // &#x6D6E;&#x70B9;&#x578B;&#x9700;&#x8981;&#x5199;&#x5168; &#x7981;&#x6B62;.1 &#x6216; 2.&#x5199;&#x6CD5;</span><br><span class="line">        &quot;no-self-compare&quot;: 2,                     // &#x4E0D;&#x5141;&#x4E0E;&#x81EA;&#x5DF1;&#x6BD4;&#x8F83;&#x4F5C;&#x4E3A;&#x6761;&#x4EF6;</span><br><span class="line">        &quot;no-sequences&quot;: 2,                        // &#x7981;&#x6B62;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x7ED3;&#x679C;&#x4E0D;&#x660E;&#x786E;&#x7684;&#x9017;&#x53F7;&#x64CD;&#x4F5C;&#x7B26;</span><br><span class="line">        &quot;no-throw-literal&quot;: 0,                    // &#x7981;&#x6B62;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x76F4;&#x63A5;&#x91CF; &#x5E94;&#x662F;Error&#x5BF9;&#x8C61;</span><br><span class="line">        &quot;no-return-assign&quot;: [0, &quot;always&quot;],        // &#x4E0D;&#x5141;return&#x65F6;&#x6709;&#x8D4B;&#x503C;&#x64CD;&#x4F5C;</span><br><span class="line">        &quot;no-redeclare&quot;: [2, {&quot;builtinGlobals&quot;: true}], // &#x4E0D;&#x5141;&#x8BB8;&#x91CD;&#x590D;&#x58F0;&#x660E;</span><br><span class="line">        &quot;no-unused-expressions&quot;: [1, {&quot;allowShortCircuit&quot;: true, &quot;allowTernary&quot;: true}], // &#x672A;&#x4F7F;&#x7528;&#x7684;&#x8868;&#x8FBE;&#x5F0F;</span><br><span class="line">        &quot;no-useless-call&quot;: 1,                     // &#x65E0;&#x610F;&#x4E49;&#x7684;&#x51FD;&#x6570;call&#x6216;apply</span><br><span class="line">        &quot;no-useless-concat&quot;: 1,                   // &#x65E0;&#x610F;&#x4E49;&#x7684;string concat</span><br><span class="line">        &quot;no-useless-escape&quot;: 1,                   // &#x7981;&#x7528;&#x65E0;&#x610F;&#x4E49;&#x7684;&#x8F6C;&#x4E49;</span><br><span class="line">        &quot;no-void&quot;: 2,                             // &#x7981;&#x7528;void</span><br><span class="line">        &quot;no-with&quot;: 1,                             // &#x7981;&#x7528;with</span><br><span class="line">        &quot;radix&quot;: 2,                               // &#x4F7F;&#x7528;parseInt&#x65F6;&#x5E26;&#x4E0A;&#x7B2C;&#x4E8C;&#x4E2A;&#x8FDB;&#x5236;&#x53C2;&#x6570;</span><br><span class="line">        &quot;no-warning-comments&quot;: [2, { &quot;terms&quot;: [&quot;fixme&quot;, &quot;fix me&quot;], &quot;location&quot;: &quot;anywhere&quot; }], // &#x6807;&#x8BB0;&#x672A;&#x5199;&#x6CE8;&#x91CA;</span><br><span class="line">        &quot;spaced-comment&quot;: 1,                      // &#x5F3A;&#x5236;&#x8981;&#x6C42;&#x6CE8;&#x91CA;&#x7B26;//&#x548C;/*&#x540E;&#x52A0;&#x7A7A;&#x683C;</span><br><span class="line">        &quot;default-case&quot;: 1,                        // &#x8981;&#x6C42;&#x5728;switch&#x8BED;&#x53E5;&#x4E2D;&#x5305;&#x542B;default case</span><br><span class="line">        &quot;space-unary-ops&quot;: 1,                     // &#x4E00;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&#x540E;&#x8981;&#x6C42;&#x7A7A;&#x683C;&#xFF0C;nonword&#x7C7B;&#x578B;&#x7684;&#x9664;&#x5916;</span><br><span class="line">        &quot;space-infix-ops&quot;: 1,                     // &#x8FD0;&#x7B97;&#x7B26;&#x5DE6;&#x53F3;&#x8981;&#x6C42;&#x7A7A;&#x683C; a + b</span><br><span class="line">        &quot;newline-before-return&quot;: 0,               // return&#x8BED;&#x53E5;&#x524D;&#x8981;&#x6C42;&#x6709;&#x7A7A;&#x884C;</span><br><span class="line">        &quot;newline-after-var&quot;: 0,                   // var&#x5B9A;&#x4E49;&#x540E;&#x8981;&#x6C42;&#x7559;&#x7A7A;&#x884C;</span><br><span class="line">        &quot;padded-blocks&quot;: 0,                       // &#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x90E8;&#x9996;&#x4F4D;&#x5305;&#x542B;&#x7A7A;&#x884C;</span><br><span class="line">        &quot;space-before-blocks&quot;: 1,                 // &#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x524D;&#x8981;&#x6C42;&#x6709;&#x7A7A;&#x683C;function() {</span><br><span class="line">        &quot;space-before-function-paren&quot;: [1, &quot;never&quot;], // function&#x540D;&#x79F0;&#x548C;&#x62EC;&#x53F7;&#x4E4B;&#x95F4;&#x4E0D;&#x8981;&#x6709;&#x7A7A;&#x683C;</span><br><span class="line">        &quot;require-jsdoc&quot;: [0, { &quot;require&quot;: {&quot;FunctionDeclaration&quot;: true, &quot;MethodDefinition&quot;: true, &quot;ClassDeclaration&quot;: true }}], // &#x8981;&#x6C42;&#x6CE8;&#x91CA;</span><br><span class="line">        &quot;operator-linebreak&quot;: [0, &quot;after&quot;],       // &#x6362;&#x884C;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x4F4D;&#x7F6E;</span><br><span class="line">        &quot;operator-assignment&quot;: [0, &quot;never&quot;],      // &#x662F;&#x5426;&#x5141;&#x8BB8;&#x4F7F;&#x7528; += %= &#x8FD9;&#x6837;&#x7684;&#x5F62;&#x5F0F;</span><br><span class="line">        &quot;no-trailing-spaces&quot;: [1, { &quot;skipBlankLines&quot;: true }], // &#x4E0D;&#x5141;&#x8BB8;&#x884C;&#x5C3E;&#x7684;&#x7A7A;&#x683C;&#xFF0C;&#x9664;&#x975E;&#x8BE5;&#x884C;&#x5B8C;&#x5168;&#x7531;&#x7A7A;&#x683C;&#x7EC4;&#x6210;</span><br><span class="line">        &quot;no-new-object&quot;: 2,                       // &#x4E0D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;Object&#x6784;&#x9020;&#x5668;</span><br><span class="line">        &quot;no-array-constructor&quot;: 2,                // &#x4E0D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;Array&#x6784;&#x9020;&#x5668;</span><br><span class="line">        &quot;no-whitespace-before-property&quot;: 1,       // &#x4E0D;&#x5141;&#x8BB8;&#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x524D;&#x7684;&#x7A7A;&#x683C; a. b</span><br><span class="line">        &quot;no-unneeded-ternary&quot;: 1,                 // &#x8FC7;&#x6EE4;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x4E09;&#x5143;&#x8FD0;&#x7B97;&#xFF0C;var isYes = answer === 1 ? true : false;</span><br><span class="line">        &quot;no-underscore-dangle&quot;: [0, {&quot;allowAfterThis&quot;: true}], // &#x4E0D;&#x5141;&#x8BB8;&#x5728;&#x53D8;&#x91CF;&#x540D;&#x4E0A;&#x60AC;&#x6302;&#x4E0B;&#x5212;&#x7EBF;</span><br><span class="line">        &quot;no-spaced-func&quot;: 1,                      // &#x8C03;&#x7528;&#x65F6;&#xFF0C; &#x51FD;&#x6570;&#x540D;&#x548C;&#x62EC;&#x53F7;&#x4E4B;&#x95F4;&#x4E0D;&#x8981;&#x6709;&#x7A7A;&#x683C;</span><br><span class="line">        &quot;no-plusplus&quot;: 0,                         // &#x4E0D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x81EA;&#x589E;&#x81EA;&#x51CF; ++ -- &#x8FD0;&#x7B97;&#x7B26;</span><br><span class="line">        &quot;no-nested-ternary&quot;: 1,                   // &#x4E0D;&#x5141;&#x8BB8;&#x5D4C;&#x5957;&#x7684;&#x4E09;&#x5143;&#x8FD0;&#x7B97;</span><br><span class="line">        &quot;no-negated-condition&quot;: 0,                // &#x4E0D;&#x5141;&#x8BB8;&#x53CD;&#x5411;&#x7684;&#x6761;&#x4EF6;&#x5224;&#x65AD;</span><br><span class="line">        &quot;no-mixed-spaces-and-tabs&quot;: 2,            // &#x4E0D;&#x8981;&#x540C;&#x65F6;&#x5B58;&#x5728;tab&#x548C;&#x7A7A;&#x683C;&#x7F29;&#x8FDB;</span><br><span class="line">        &quot;no-inline-comments&quot;: 0,                  // &#x4E0D;&#x5141;&#x8BB8;&#x5728;&#x540C;&#x884C;&#x6CE8;&#x91CA;</span><br><span class="line">        &quot;newline-per-chained-call&quot;: [1, {&quot;ignoreChainWithDepth&quot;: 3}], // &#x94FE;&#x5F0F;&#x8C03;&#x7528;&#x8981;&#x6C42;&#x65B0;&#x8D77;&#x4E00;&#x884C;</span><br><span class="line">        &quot;new-parens&quot;: 2,                          // new&#x4E00;&#x4E2A;&#x6784;&#x9020;&#x5668;&#x65F6;&#x8981;&#x6C42;&#x62EC;&#x53F7;</span><br><span class="line">        &quot;new-cap&quot;: 2,                             // &#x6784;&#x9020;&#x51FD;&#x6570;&#x8981;&#x6C42;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x6BCD;&#x5927;&#x5199;</span><br><span class="line">        &quot;max-statements-per-line&quot;: [2, {&quot;max&quot;: 3}], // &#x4E0D;&#x8981;&#x5728;&#x540C;&#x4E00;&#x884C;&#x5199;3&#x4E2A;&#x53CA;&#x4EE5;&#x4E0A;&#x7684;&#x8BED;&#x53E5;</span><br><span class="line">        &quot;block-spacing&quot;: 0,                       // &#x5355;&#x884C;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x524D;&#x540E;&#x662F;&#x5426;&#x52A0;&#x7A7A;&#x683C;</span><br><span class="line">        &quot;linebreak-style&quot;: 1,                     // &#x7EDF;&#x4E00;&#x7684;&#x6362;&#x884C;&#x7B26; LF</span><br><span class="line">        &quot;camelcase&quot;: 1,                           // &#x4F7F;&#x7528;&#x9A7C;&#x5CF0;&#x547D;&#x540D;&#x7EA6;&#x5B9A;</span><br><span class="line">        &quot;keyword-spacing&quot;: 1,                     // &#x5173;&#x952E;&#x5B57;&#x524D;&#x540E;&#x8981;&#x6C42;&#x7A7A;&#x683C;&#x5982; } else {</span><br><span class="line">        &quot;indent&quot;: [1, 4],                         // &#x8981;&#x6C42;&#x7F29;&#x8FDB;</span><br><span class="line">        &quot;eol-last&quot;: 1,                            // &#x8981;&#x6C42;&#x6587;&#x4EF6;&#x4EE5;&#x7A7A;&#x884C;&#x7ED3;&#x5C3E;</span><br><span class="line">        &quot;consistent-this&quot;: [1, &quot;self&quot;],           // &#x7528;&#x4EC0;&#x4E48;&#x53D8;&#x91CF;&#x540D;&#x5E26;&#x66FF;&#x4EE3;this&#x6307;&#x9488;</span><br><span class="line">        &quot;brace-style&quot;: [0, &quot;stroustrup&quot;],         // &#x4EE3;&#x7801;&#x7ED3;&#x6784;&#x98CE;&#x683C; [1tbs, stroustrup, allman]</span><br><span class="line">        &quot;no-undef-init&quot;: 1,                       // &#x4E0D;&#x9700;&#x8981;&#x521D;&#x59CB;&#x5316;&#x53D8;&#x91CF;&#x4E3A;undefined</span><br><span class="line">        &quot;curly&quot;: 1                                // if&#x3001;else&#x3001;while&#x3001;for&#x4EE3;&#x7801;&#x5757;&#x7528;{}&#x5305;&#x56F4;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h2 id="3-&#x6CE8;&#x91CA;&#x89C4;&#x8303;"><a href="#3-&#x6CE8;&#x91CA;&#x89C4;&#x8303;" class="headerlink" title="3. &#x6CE8;&#x91CA;&#x89C4;&#x8303;"></a>3. &#x6CE8;&#x91CA;&#x89C4;&#x8303;</h2><p>&#x6CE8;&#x91CA;&#x6BD4;&#x4EE3;&#x7801;&#x66F4;&#x91CD;&#x8981;&#xFF0C;&#x826F;&#x597D;&#x7684;&#x6CE8;&#x91CA;&#x8BA9;&#x4EBA;&#x66F4;&#x5BB9;&#x6613;&#x4E86;&#x89E3;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x548C;&#x719F;&#x6089;&#x4F60;&#x7684;&#x601D;&#x8DEF;&#x3002;Javascript &#x4E3B;&#x8981;&#x91C7;&#x7528; JSDoc &#x7684;&#x89C4;&#x8303;&#xFF0C;&#x6CE8;&#x91CA;&#x662F;&#x4E00;&#x95E8;&#x5F88;&#x6DF1;&#x7684;&#x5B66;&#x95EE;&#xFF0C;&#x6211;&#x4EEC;&#x7B80;&#x5355;&#x7684;&#x5BF9;&#x4E00;&#x4E9B;&#x6CE8;&#x91CA;&#x505A;&#x51FA;&#x4E00;&#x4E9B;&#x5EFA;&#x8BAE;&#x3002;</p>
+<ul>
+<li><p>&#x6BCF;&#x4E2A; JS &#x6587;&#x4EF6;&#x9876;&#x90E8;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x5F53;&#x5BF9;&#x6587;&#x4EF6;&#x4F5C;&#x8005;&#xFF0C;&#x7248;&#x672C;&#x7B49;&#x6982;&#x8981;&#x4FE1;&#x606F;&#x4F5C;&#x51FA;&#x8BF4;&#x660E;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x53C2;&#x8003;:</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * &#x8D44;&#x4EA7;&#x9996;&#x9875;</span><br><span class="line"> *</span><br><span class="line"> * &#x663E;&#x793A;&#x7528;&#x6237;&#x7684;&#x5F53;&#x65E5;&#x76C8;&#x4E8F;&#x548C;&#x6301;&#x80A1;&#x7D2F;&#x8BA1;&#x76C8;&#x4E8F;</span><br><span class="line"> * &#x63D0;&#x793A;&#x7528;&#x6237;&#x5C1A;&#x6709;&#x672A;&#x5B8C;&#x6210;&#x7684;&#x4EA4;&#x6613;</span><br><span class="line"> * &#x63D0;&#x4F9B;&#x67E5;&#x8BE2;&#x8D44;&#x91D1;&#x8BE6;&#x60C5;&#x7684;&#x5165;&#x53E3;</span><br><span class="line"> *</span><br><span class="line"> * - &#x5F53;&#x7528;&#x6237;&#x6709;&#x6301;&#x4ED3;&#x80A1;&#x7968;&#x65F6;&#xFF0C;&#x663E;&#x793A;&#x7528;&#x6237;&#x6301;&#x4ED3;&#x7684;&#x80A1;&#x7968;&#x5217;&#x8868;</span><br><span class="line"> * - &#x5F53;&#x7528;&#x6237;&#x6709;&#x8D44;&#x91D1;&#x65E0;&#x6301;&#x4ED3;&#x80A1;&#x7968;&#x65F6;&#xFF0C;&#x63D0;&#x793A;&#x7528;&#x6237;&#x53BB;&#x8D2D;&#x4E70;&#x80A1;&#x7968;</span><br><span class="line"> * - &#x5F53;&#x7528;&#x6237;&#x65E0;&#x8D44;&#x91D1;&#x65F6;&#xFF0C;&#x63D0;&#x793A;&#x7528;&#x6237;&#x53BB;&#x5145;&#x503C;</span><br><span class="line"> *</span><br><span class="line"> * @class index</span><br><span class="line"> * @module asset</span><br><span class="line"> * @version 1.0.0</span><br><span class="line"> * @author kevinnwang &lt;latelx64@gmail.com&gt;</span><br><span class="line"> * @date 2015.01.19</span><br><span class="line"> *</span><br><span class="line"> * <span class="doctag">TODO:</span> &#x8003;&#x8651;&#x53D1;&#x751F;&#x6ED1;&#x52A8;&#x52A8;&#x753B;&#x65F6;&#xFF0C;&#x5EF6;&#x7F13;&#x53BB;&#x670D;&#x52A1;&#x5668;&#x62C9;&#x53D6;&#x6570;&#x636E;&#x66F4;&#x65B0;UI&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x53EF;&#x80FD;&#x7684;&#x4E1C;&#x6E56;&#x95EE;&#x9898;</span><br><span class="line"> * <span class="doctag">TODO:</span> &#x8003;&#x8651;&#x5728;&#x522B;&#x5904;&#x4EA4;&#x6613;&#x3001;&#x5145;&#x503C;&#x6216;&#x4F53;&#x9A8C;&#xFF0C;&#x6B64;&#x9875;&#x9762;&#x5728;&#x62C9;&#x53D6;&#x65B0;&#x6570;&#x636E;&#x540E;&#x9875;&#x9762;&#x53EF;&#x80FD;&#x4EA7;&#x751F;&#x7684;&#x5F71;&#x54CD;</span><br><span class="line"> * <span class="doctag">TODO:</span> &#x5F3A;&#x5236;&#x5237;&#x65B0;&#x6570;&#x636E;&#x7684;&#x4EE3;&#x7801;</span><br><span class="line"> */</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>&#x5F53;&#x6709;&#x9700;&#x8981;&#x7A0D;&#x540E;&#x5B8C;&#x5584;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x6216;&#x8005;&#x4EE3;&#x7801;&#x91CD;&#x6784;&#x65F6;&#x9700;&#x8981;&#x8003;&#x8651;&#x7684;&#x6CE8;&#x610F;&#x70B9;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x4F7F;&#x7528; <code>TODO</code> &#x6CE8;&#x91CA;&#x7B26;&#xFF0C;&#x5982;:</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// <span class="doctag">TODO:</span> features needed to be implemented</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>&#x5F53;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x9700;&#x8981;&#x7A0D;&#x540E;&#x5728;&#x53D1;&#x5E03;&#x524D;&#x4FEE;&#x590D;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x4F7F;&#x7528; <code>FIXME</code> &#x6CE8;&#x91CA;&#x7B26;&#xFF0C;&#x5982;:</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// <span class="doctag">FIXME:</span> this is not a good idea</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="&#x6211;&#x4EEC;&#x8FD8;&#x63D0;&#x70BC;&#x4E86;&#x4E00;&#x4E9B;&#x6CE8;&#x91CA;&#x7684;&#x7EA6;&#x675F;&#xFF0C;&#x5E0C;&#x671B;&#x80FD;&#x5728;&#x6CE8;&#x91CA;&#x5C42;&#x9762;&#x51CF;&#x5C11;&#x56E2;&#x961F;&#x7684;&#x6C9F;&#x901A;&#x969C;&#x788D;"><a href="#&#x6211;&#x4EEC;&#x8FD8;&#x63D0;&#x70BC;&#x4E86;&#x4E00;&#x4E9B;&#x6CE8;&#x91CA;&#x7684;&#x7EA6;&#x675F;&#xFF0C;&#x5E0C;&#x671B;&#x80FD;&#x5728;&#x6CE8;&#x91CA;&#x5C42;&#x9762;&#x51CF;&#x5C11;&#x56E2;&#x961F;&#x7684;&#x6C9F;&#x901A;&#x969C;&#x788D;" class="headerlink" title="&#x6211;&#x4EEC;&#x8FD8;&#x63D0;&#x70BC;&#x4E86;&#x4E00;&#x4E9B;&#x6CE8;&#x91CA;&#x7684;&#x7EA6;&#x675F;&#xFF0C;&#x5E0C;&#x671B;&#x80FD;&#x5728;&#x6CE8;&#x91CA;&#x5C42;&#x9762;&#x51CF;&#x5C11;&#x56E2;&#x961F;&#x7684;&#x6C9F;&#x901A;&#x969C;&#x788D;:"></a>&#x6211;&#x4EEC;&#x8FD8;&#x63D0;&#x70BC;&#x4E86;&#x4E00;&#x4E9B;&#x6CE8;&#x91CA;&#x7684;&#x7EA6;&#x675F;&#xFF0C;&#x5E0C;&#x671B;&#x80FD;&#x5728;&#x6CE8;&#x91CA;&#x5C42;&#x9762;&#x51CF;&#x5C11;&#x56E2;&#x961F;&#x7684;&#x6C9F;&#x901A;&#x969C;&#x788D;:</h3><ol>
+<li><p>&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x5E94;&#x8BE5;&#x5199;&#x6CE8;&#x91CA;</p>
+<p> &#x5982;&#x679C;&#x4EE5;&#x540E;&#x56DE;&#x8FC7;&#x5934;&#x6765;&#x770B;&#x8FD9;&#x4E9B;&#x4EE3;&#x7801;&#xFF0C;&#x6211;&#x80FD;&#x4E0D;&#x80FD;&#x4E00;&#x4E0B;&#x5B50;&#x660E;&#x767D;&#x5F53;&#x521D;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x8FD9;&#x6837;&#x5199;&#x3002;</p>
+</li>
+<li><p>&#x4E0D;&#x8981;&#x4FAE;&#x8FB1;&#x8BFB;&#x8005;&#x7684;&#x667A;&#x6167;</p>
+<p> &#x4E00;&#x4E9B;&#x5F88;&#x7B80;&#x5355;&#x5F88;&#x5BB9;&#x6613;&#x770B;&#x61C2;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x4E0D;&#x9700;&#x8981;&#x88AB;&#x6CE8;&#x91CA;&#x7684;&#xFF0C;&#x6CE8;&#x91CA;&#x5E94;&#x5F53;&#x5E2E;&#x52A9;&#x9605;&#x8BFB;&#x8005;&#x66F4;&#x597D;&#x7684;&#x7406;&#x89E3;&#x4EE3;&#x7801;&#x4E2D;&#x4F60;&#x8BA4;&#x4E3A;&#x53EF;&#x80FD;&#x4F1A;&#x4EA7;&#x751F;&#x8D39;&#x89E3;&#x7684;&#x90E8;&#x5206;&#x3002;</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span> + <span class="number">1</span>; <span class="comment">// 1+1=2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// If the color is red, turn it green </span></span><br><span class="line"><span class="keyword">if</span> (color.is_red()) { </span><br><span class="line">	color.turn_green(); </span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ol>
+<li><p>&#x5173;&#x6CE8;&#x8981;&#x70B9;</p>
+<p> &#x6CE8;&#x91CA;&#x8981;&#x5C3D;&#x91CF;&#x4EE5;&#x6700;&#x77ED;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x63D0;&#x70BC;&#x8981;&#x70B9;&#xFF0C;&#x800C;&#x4E0D;&#x8981;&#x5199;&#x4E00;&#x5927;&#x5806;&#x65E0;&#x5173;&#x7CBE;&#x8981;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x753B;&#x86C7;&#x6DFB;&#x8DB3;&#x7684;&#x6CE8;&#x91CA;&#x4F1A;&#x9020;&#x6210;&#x6DF7;&#x4E71;&#x3002;</p>
+</li>
+<li><p>&#x4F60;&#x5199;&#x51FA;&#x7684;&#x6BCF;&#x884C;&#x4EE3;&#x7801;&#xFF0C;&#x65E5;&#x540E;&#x90FD;&#x4F1A;&#x7531;&#x4F60;&#x7EF4;&#x62A4;</p>
+<p> &#x5F53;&#x6CE8;&#x91CA;&#x4EE3;&#x7801;&#x65F6;&#xFF0C;&#x8981;&#x8003;&#x8651;&#x5230;&#x4E0D;&#x4EC5;&#x5C06;&#x6765;&#x7EF4;&#x62A4;&#x4F60;&#x4EE3;&#x7801;&#x7684;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x8981;&#x770B;&#xFF0C;&#x800C;&#x4E14;&#x4F60;&#x81EA;&#x5DF1;&#x4E5F;&#x53EF;&#x80FD;&#x8981;&#x770B;&#x3002;<br> &#x7528;Phil Haack&#x5927;&#x5E08;&#x7684;&#x8BDD;&#x6765;&#x8BF4;&#x5C31;&#x662F;&#xFF1A;&#x201C;&#x4E00;&#x65E6;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x663E;&#x793A;&#x5C4F;&#x5E55;&#x4E0A;&#xFF0C;&#x4F60;&#x4E5F;&#x5C31;&#x6210;&#x4E86;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x7EF4;&#x62A4;&#x8005;&#x201D;&#x3002;<br> &#x56E0;&#x6B64;&#xFF0C;&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x5199;&#x5F97;&#x597D;(&#x5DEE;)&#x7684;&#x6CE8;&#x91CA;&#x800C;&#x8A00;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x53D7;&#x76CA;&#x8005;(&#x53D7;&#x5BB3;&#x8005;)&#x3002;</p>
+</li>
+<li><p>&#x5FAE;&#x8BC1;&#x5238;&#x7684;&#x4E00;&#x4E9B;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;</p>
+</li>
+</ol>
+<hr>
+<h3 id="&#x76F4;&#x63A5;&#x4F20;DOM&#x8282;&#x70B9;&#x6027;&#x80FD;&#x66F4;&#x4F18;"><a href="#&#x76F4;&#x63A5;&#x4F20;DOM&#x8282;&#x70B9;&#x6027;&#x80FD;&#x66F4;&#x4F18;" class="headerlink" title="&#x76F4;&#x63A5;&#x4F20;DOM&#x8282;&#x70B9;&#x6027;&#x80FD;&#x66F4;&#x4F18;"></a>&#x76F4;&#x63A5;&#x4F20;DOM&#x8282;&#x70B9;&#x6027;&#x80FD;&#x66F4;&#x4F18;</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line">$(<span class="string">&apos;body&apos;</span>);</span><br><span class="line"><span class="comment">// better practise</span></span><br><span class="line">$(<span class="built_in">document</span>.body);</span><br></pre></td></tr></table></figure>
+<h3 id="&#x907F;&#x514D;&#x53D8;&#x91CF;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;&#x7684;&#x62A5;&#x9519;"><a href="#&#x907F;&#x514D;&#x53D8;&#x91CF;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;&#x7684;&#x62A5;&#x9519;" class="headerlink" title="&#x907F;&#x514D;&#x53D8;&#x91CF;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;&#x7684;&#x62A5;&#x9519;"></a>&#x907F;&#x514D;&#x53D8;&#x91CF;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;&#x7684;&#x62A5;&#x9519;</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">G_SPEED</span><br><span class="line"><span class="built_in">window</span>.G_SPEED</span><br><span class="line"></span><br><span class="line">iScroll</span><br><span class="line"><span class="built_in">window</span>.iScroll</span><br></pre></td></tr></table></figure>
+<h3 id="&#x7F13;&#x5B58;&#x8282;&#x70B9;&#x63D0;&#x9AD8;&#x6027;&#x80FD;-&#x6302;&#x8F7D;&#x5B50;&#x8282;&#x70B9;&#x5230;&#x7236;&#x8282;&#x70B9;&#x7684;&#x53D8;&#x91CF;&#x4E0A;&#x66F4;&#x6613;&#x4E8E;&#x7406;&#x89E3;"><a href="#&#x7F13;&#x5B58;&#x8282;&#x70B9;&#x63D0;&#x9AD8;&#x6027;&#x80FD;-&#x6302;&#x8F7D;&#x5B50;&#x8282;&#x70B9;&#x5230;&#x7236;&#x8282;&#x70B9;&#x7684;&#x53D8;&#x91CF;&#x4E0A;&#x66F4;&#x6613;&#x4E8E;&#x7406;&#x89E3;" class="headerlink" title="&#x7F13;&#x5B58;&#x8282;&#x70B9;&#x63D0;&#x9AD8;&#x6027;&#x80FD;,&#x6302;&#x8F7D;&#x5B50;&#x8282;&#x70B9;&#x5230;&#x7236;&#x8282;&#x70B9;&#x7684;&#x53D8;&#x91CF;&#x4E0A;&#x66F4;&#x6613;&#x4E8E;&#x7406;&#x89E3;"></a>&#x7F13;&#x5B58;&#x8282;&#x70B9;&#x63D0;&#x9AD8;&#x6027;&#x80FD;,&#x6302;&#x8F7D;&#x5B50;&#x8282;&#x70B9;&#x5230;&#x7236;&#x8282;&#x70B9;&#x7684;&#x53D8;&#x91CF;&#x4E0A;&#x66F4;&#x6613;&#x4E8E;&#x7406;&#x89E3;</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $nodeBtnSubmit = $(<span class="string">&apos;#btn&apos;</span>); <span class="comment">// &#x4F7F;&#x7528;$&#x5F00;&#x5934;&#x7684;&#x53D8;&#x91CF;&#x540D;&#x8868;&#x793A;&#x4E3A;&#x4E00;&#x4E2A; jQuery &#x5BF9;&#x8C61;</span></span><br><span class="line"><span class="keyword">var</span> $$nodeBtnSubmit = <span class="built_in">document</span>.querySelector(<span class="string">&apos;#btn&apos;</span>); <span class="comment">// &#x4F7F;&#x7528; $$ &#x6765;&#x8868;&#x793A;&#x8FD9;&#x662F;&#x4E00;&#x4E2A; DOM &#x8282;&#x70B9;&#x5BF9;&#x8C61;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> $view = $(<span class="string">&apos;#view&apos;</span>); <span class="comment">// &#x6302;&#x8F7D;&#x8282;&#x70B9;</span></span><br><span class="line">$view.$pageA = $view.find(<span class="string">&apos;.page&apos;</span>).eq(<span class="number">0</span>);</span><br><span class="line">$view.$pageA.$btnSend = $view.$pageA.find(<span class="string">&apos;button&apos;</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="&#x5408;&#x9002;&#x7684;&#x7559;&#x767D;&#xFF0C;&#x589E;&#x5F3A;&#x4EE3;&#x7801;&#x9605;&#x8BFB;&#x6027;"><a href="#&#x5408;&#x9002;&#x7684;&#x7559;&#x767D;&#xFF0C;&#x589E;&#x5F3A;&#x4EE3;&#x7801;&#x9605;&#x8BFB;&#x6027;" class="headerlink" title="&#x5408;&#x9002;&#x7684;&#x7559;&#x767D;&#xFF0C;&#x589E;&#x5F3A;&#x4EE3;&#x7801;&#x9605;&#x8BFB;&#x6027;"></a>&#x5408;&#x9002;&#x7684;&#x7559;&#x767D;&#xFF0C;&#x589E;&#x5F3A;&#x4EE3;&#x7801;&#x9605;&#x8BFB;&#x6027;</h3><p>&#x8003;&#x8651;&#x4EE5;&#x4E0B;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5408;&#x9002;&#x7684;&#x7559;&#x767D;&#x5BF9;&#x4E8E;&#x4EE3;&#x7801;&#x7684;&#x53EF;&#x9605;&#x8BFB;&#x6027;&#x662F;&#x6709;&#x5F88;&#x5927;&#x63D0;&#x5347;&#x7684;&#x3002;</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getMaxDiff</span>(<span class="params">index, stock</span>) </span>{</span><br><span class="line">    <span class="keyword">var</span> i = <span class="number">0</span>, maxDiff = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; stock.length; i++) {</span><br><span class="line">        maxDiff = <span class="built_in">Math</span>.abs(stock[i]) &gt; maxDiff ? <span class="built_in">Math</span>.abs(stock[i]) : maxDiff;</span><br><span class="line">        maxDiff = <span class="built_in">Math</span>.abs(index[i]) &gt; maxDiff ? <span class="built_in">Math</span>.abs(index[i]) : maxDiff;</span><br><span class="line">    }</span><br><span class="line">    <span class="comment">// &#x5411;&#x4E0A;&#x53D6;&#x53EF;&#x4EE5;&#x88AB;5&#x6574;&#x51FA;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x6613;&#x4E8E;&#x4EBA;&#x7C7B;&#x7406;&#x89E3;</span></span><br><span class="line">    maxDiff = <span class="built_in">Math</span>.ceil(maxDiff);</span><br><span class="line">    <span class="keyword">while</span> (maxDiff % <span class="number">5</span>) {</span><br><span class="line">        maxDiff++;</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> maxDiff;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="comment">// better</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getMaxDiff</span>(<span class="params">index, stock</span>) </span>{</span><br><span class="line">    <span class="keyword">var</span> i = <span class="number">0</span>, maxDiff = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; stock.length; i++) {</span><br><span class="line">        maxDiff = <span class="built_in">Math</span>.abs(stock[i]) &gt; maxDiff ? <span class="built_in">Math</span>.abs(stock[i]) : maxDiff;</span><br><span class="line">        maxDiff = <span class="built_in">Math</span>.abs(index[i]) &gt; maxDiff ? <span class="built_in">Math</span>.abs(index[i]) : maxDiff;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="comment">// &#x5411;&#x4E0A;&#x53D6;&#x53EF;&#x4EE5;&#x88AB;5&#x6574;&#x51FA;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x6613;&#x4E8E;&#x4EBA;&#x7C7B;&#x7406;&#x89E3;</span></span><br><span class="line">    maxDiff = <span class="built_in">Math</span>.ceil(maxDiff);</span><br><span class="line">    <span class="keyword">while</span> (maxDiff % <span class="number">5</span>) {</span><br><span class="line">        maxDiff++;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> maxDiff;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h3 id="&#x5C3D;&#x91CF;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x81EA;&#x52A8;&#x683C;&#x5F0F;&#x5316;&#x63D2;&#x4EF6;"><a href="#&#x5C3D;&#x91CF;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x81EA;&#x52A8;&#x683C;&#x5F0F;&#x5316;&#x63D2;&#x4EF6;" class="headerlink" title="&#x5C3D;&#x91CF;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x81EA;&#x52A8;&#x683C;&#x5F0F;&#x5316;&#x63D2;&#x4EF6;"></a>&#x5C3D;&#x91CF;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x81EA;&#x52A8;&#x683C;&#x5F0F;&#x5316;&#x63D2;&#x4EF6;</h3><p>&#x81EA;&#x52A8;&#x683C;&#x5F0F;&#x5316;&#x63D2;&#x4EF6;&#x901A;&#x5E38;&#x90FD;&#x6CA1;&#x6709;&#x88AB;&#x5F88;&#x5B8C;&#x5584;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x5BF9;&#x4E8E;&#x7ED3;&#x6784;&#x5DF2;&#x7ECF;&#x5F88;&#x597D;&#x4F18;&#x5316;&#x8FC7;&#x7684;&#x4EE3;&#x7801;&#x5F0A;&#x5927;&#x4E8E;&#x5229;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x7EF4;&#x62A4;&#x7684;&#x5F88;&#x597D;&#x7684;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#x91CC;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x3002;<br>&#x6B64;&#x7C7B;&#x63D2;&#x4EF6;&#x66F4;&#x9002;&#x5408;&#x7528;&#x5728;&#x5C06;&#x6DF7;&#x6DC6;&#x7684;&#x4EE3;&#x7801;&#x91CD;&#x65B0;&#x683C;&#x5F0F;&#x5316;&#x7684;&#x573A;&#x666F;&#x4E2D;&#x3002;</p>
+<h3 id="&#x8BED;&#x4E49;&#x5316;"><a href="#&#x8BED;&#x4E49;&#x5316;" class="headerlink" title="&#x8BED;&#x4E49;&#x5316;"></a>&#x8BED;&#x4E49;&#x5316;</h3><p>&#x8003;&#x8651;&#x5230;&#x6784;&#x5EFA;&#x5DE5;&#x5177;&#x4F1A;&#x81EA;&#x52A8;&#x628A;&#x975E;&#x5BF9;&#x5916;&#x7684;&#x53D8;&#x91CF;&#x540D;&#x548C;&#x51FD;&#x6570;&#x540D;&#x538B;&#x7F29;&#x4E3A;&#x5355;&#x5B57;&#x7B26;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x5728;&#x7F16;&#x7801;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x5C3D;&#x91CF;&#x9009;&#x62E9;&#x957F;&#x5EA6;&#x5408;&#x9002;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x800C;&#x65E0;&#x9700;&#x5173;&#x5FC3;&#x5360;&#x7528;&#x95EE;&#x9898;&#x3002;&#x6211;&#x4EEC;&#x5728;&#x7F16;&#x7801;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E00;&#x5B9A;&#x8981;&#x8003;&#x8651;&#x5230;&#x6807;&#x8BC6;&#x7B26;&#x7684;&#x547D;&#x540D;&#x662F;&#x5426;&#x6613;&#x4E8E;&#x7406;&#x89E3;&#x548C;&#x7B26;&#x5408;&#x60C5;&#x666F;&#x3001;&#x7B26;&#x5408;&#x8BED;&#x4E49;&#x3002;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x53EF;&#x4EE5;&#x5F88;&#x8F7B;&#x677E;&#x7684;&#x8BA9;&#x4EE3;&#x7801;&#x9605;&#x8BFB;&#x8005;&#x4E00;&#x773C;&#x5C31;&#x77E5;&#x9053;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x53D8;&#x91CF;&#x6240;&#x4EE3;&#x8868;&#x7684;&#x542B;&#x4E49;&#x3002;</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Painter.withContext(<span class="keyword">this</span>).fillTo(canvas); <span class="comment">// good</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="string">&apos;#000&apos;</span>; <span class="comment">// bad</span></span><br><span class="line"><span class="keyword">var</span> colorBlack = <span class="string">&apos;#000&apos;</span>; <span class="comment">// good</span></span><br></pre></td></tr></table></figure>
+<h3 id="&#x5B9A;&#x4E49;&#x5E38;&#x91CF;"><a href="#&#x5B9A;&#x4E49;&#x5E38;&#x91CF;" class="headerlink" title="&#x5B9A;&#x4E49;&#x5E38;&#x91CF;"></a>&#x5B9A;&#x4E49;&#x5E38;&#x91CF;</h3><p>&#x867D;&#x7136; ES5 &#x5E76;&#x6CA1;&#x6709;&#x771F;&#x6B63;&#x610F;&#x4E49;&#x4E0A;&#x7684;&#x5E38;&#x91CF;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x4F9D;&#x7136;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;var&#x6765;&#x5B9A;&#x4E49;&#x5168;&#x5927;&#x5199;&#x5B57;&#x7B26;&#x7684;&#x53D8;&#x91CF;&#x6765;&#x4EE3;&#x8868;&#x5E38;&#x91CF;&#xFF0C;&#x5E38;&#x91CF;&#x53EF;&#x4EE5;&#x5F88;&#x597D;&#x7684;&#x63D0;&#x5347;&#x7A0B;&#x5E8F;&#x7684;&#x53EF;&#x9605;&#x8BFB;&#x6027;&#xFF1B;</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// &#x522B;&#x4EBA;&#x9605;&#x8BFB;&#x4F60;&#x4EE3;&#x7801;&#x7684;&#x65F6;&#x5019;&#x5F88;&#x96BE;&#x641E;&#x61C2;&#x8FD9;&#x4E9B;&#x6570;&#x5B57;&#x7684;&#x610F;&#x4E49;&#xFF0C;&#x4E5F;&#x4E0D;&#x597D;&#x8BB0;&#x5FC6;</span></span><br><span class="line"><span class="keyword">if</span> (she.is === <span class="string">&apos;1&apos;</span>) {</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&apos;she is happy.&apos;</span>);</span><br><span class="line">}</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span> (she.is === <span class="string">&apos;2&apos;</span> || she.is == <span class="string">&apos;3&apos;</span>) {</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&apos;she is unhappy.&apos;</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// &#x66F4;&#x5BB9;&#x6613;&#x7406;&#x89E3;</span></span><br><span class="line"><span class="keyword">var</span> STATE = {</span><br><span class="line">    HAPPY: <span class="string">&apos;1&apos;</span>,</span><br><span class="line">    SAD: <span class="string">&apos;2&apos;</span>,</span><br><span class="line">    SORROW: <span class="string">&apos;3&apos;</span></span><br><span class="line">};</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line">if (she.is === STATE.HAPPY) {</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&apos;she is happy.&apos;</span>);</span><br><span class="line">}</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span> (she.is === STATE.SAD || she.is == STATE.SORROW) {</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&apos;she is unhappy.&apos;</span>);</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h3 id="&#x94FE;&#x5F0F;&#x8C03;&#x7528;"><a href="#&#x94FE;&#x5F0F;&#x8C03;&#x7528;" class="headerlink" title="&#x94FE;&#x5F0F;&#x8C03;&#x7528;"></a>&#x94FE;&#x5F0F;&#x8C03;&#x7528;</h3><p>&#x94FE;&#x5F0F;&#x8C03;&#x7528;&#x6BCF;&#x6761;&#x8C03;&#x7528;&#x65B0;&#x8D77;&#x4E00;&#x884C;&#x4F1A;&#x662F;&#x66F4;&#x597D;&#x7684;&#x5B9E;&#x8DF5;&#xFF0C;&#x6BCF;&#x4E00;&#x884C;&#x90FD;&#x53EF;&#x4EE5;&#x6E05;&#x6670;&#x7684;&#x89C2;&#x5BDF;&#x5230;&#x6267;&#x884C;&#x4E86;&#x4EC0;&#x4E48;&#x3002;</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// This is bad</span></span><br><span class="line"><span class="built_in">Promise</span>.resolve(<span class="keyword">this</span>._meta).then(<span class="keyword">this</span>._collectData.bind(<span class="keyword">this</span>)).then(<span class="keyword">this</span>._render.bind(<span class="keyword">this</span>)).then(<span class="keyword">this</span>._bindEvents.bind(<span class="keyword">this</span>))</span><br><span class="line">.catch(<span class="function"><span class="keyword">function</span>(<span class="params">err</span>) </span>{</span><br><span class="line">    self.state = (++self.retrytime &gt;= MAXRETRYTIME) ? STATE.GIVEUP : STATE.FAILED;</span><br><span class="line">    err.retmsg = err.retmsg || err.message || <span class="string">&apos;&apos;</span>;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">&apos;card in &apos;</span> + (self.state === STATE.FAILED ? <span class="string">&apos;failed&apos;</span> : <span class="string">&apos;giveup&apos;</span>) + <span class="string">&apos; state: index &apos;</span> + self.index + <span class="string">&apos;, type &apos;</span> + <span class="built_in">Object</span>.keys(TYPE)[self._meta.type - <span class="number">1</span>].toLowerCase() + (err.retmsg ? (<span class="string">&apos;, reason: &apos;</span> + err.retmsg) : <span class="string">&apos;&apos;</span>) + <span class="string">&apos;.&apos;</span>);</span><br><span class="line">});</span><br><span class="line"></span><br><span class="line"><span class="comment">// This is good idea</span></span><br><span class="line"><span class="built_in">Promise</span>.resolve(<span class="keyword">this</span>._meta)</span><br><span class="line">    .then(<span class="keyword">this</span>._collectData.bind(<span class="keyword">this</span>))</span><br><span class="line">    .then(<span class="keyword">this</span>._render.bind(<span class="keyword">this</span>))</span><br><span class="line">    .then(<span class="keyword">this</span>._bindEvents.bind(<span class="keyword">this</span>))</span><br><span class="line">    .catch(<span class="function"><span class="keyword">function</span>(<span class="params">err</span>) </span>{</span><br><span class="line">        self.state = (++self.retrytime &gt;= MAXRETRYTIME) ? STATE.GIVEUP : STATE.FAILED;</span><br><span class="line">        err.retmsg = err.retmsg || err.message || <span class="string">&apos;&apos;</span>;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">&apos;card in &apos;</span> + (self.state === STATE.FAILED ? <span class="string">&apos;failed&apos;</span> : <span class="string">&apos;giveup&apos;</span>) + <span class="string">&apos; state: index &apos;</span> + self.index + <span class="string">&apos;, type &apos;</span> + <span class="built_in">Object</span>.keys(TYPE)[self._meta.type - <span class="number">1</span>].toLowerCase() + (err.retmsg ? (<span class="string">&apos;, reason: &apos;</span> + err.retmsg) : <span class="string">&apos;&apos;</span>) + <span class="string">&apos;.&apos;</span>);</span><br><span class="line">    });</span><br></pre></td></tr></table></figure>
+<h3 id="&#x5BF9;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x7684;-retcode-&#x5904;&#x7406;"><a href="#&#x5BF9;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x7684;-retcode-&#x5904;&#x7406;" class="headerlink" title="&#x5BF9;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x7684; retcode &#x5904;&#x7406;"></a>&#x5BF9;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x7684; retcode &#x5904;&#x7406;</h3><p>&#x4E0D;&#x540C;&#x7684;&#x540E;&#x53F0;&#x5BF9;&#x4E8E;&#x9519;&#x8BEF;&#x7684;&#x5904;&#x7406;&#x4E0D;&#x901A;&#xFF0C;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x662F;&#x7EAF;&#x6570;&#x5B57;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x8981;&#x5BF9;&#x8FD9;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x517C;&#x5BB9;&#x5904;&#x7406;&#x3002;&#x6211;&#x4EEC;&#x63A8;&#x8350;&#x4EE5; recode &#x548C; retmsg &#x5206;&#x522B;&#x6307;&#x4EE3;&#x9519;&#x8BEF;&#x7801;&#x548C;&#x9519;&#x8BEF;&#x63CF;&#x8FF0;&#xFF1B;&#x6211;&#x4EEC;&#x8FD8;&#x63A8;&#x8350;&#x4EE5; Http &#x4EE3;&#x7801;&#x4E3A;&#x6807;&#x51C6;&#x6765;&#x8BBE;&#x8BA1; retcode&#xFF1B;&#x5982;&#x679C;&#x4E0D;&#x7B26;&#x5408;&#x6B64;&#x6807;&#x51C6;&#x5E94;&#x52A0;&#x6CE8;&#x91CA;&#x7279;&#x522B;&#x8BF4;&#x660E;&#xFF0C;&#x8BA9;&#x5927;&#x5BB6;&#x77E5;&#x9053;&#x4E0D;&#x662F;&#x4F60;&#x5199;&#x9519;&#x4E86;&#x3002;</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">$.ajax({</span><br><span class="line">	url: <span class="string">&apos;/cgi-bin/fetch.cgi&apos;</span>,</span><br><span class="line">	success: <span class="function"><span class="keyword">function</span>(<span class="params">res</span>) </span>{</span><br><span class="line">		<span class="keyword">switch</span> (<span class="built_in">parseInt</span>(res.retcode, <span class="number">10</span>)) {</span><br><span class="line">		<span class="keyword">case</span> <span class="string">&apos;200&apos;</span>:</span><br><span class="line">			<span class="built_in">console</span>.log(res.retmsg || <span class="string">&apos;Ok&apos;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> <span class="string">&apos;500&apos;</span>:</span><br><span class="line">			<span class="built_in">console</span>.error(res.retmsg || <span class="string">&apos;Server internal error.&apos;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">default</span>:</span><br><span class="line">			<span class="built_in">console</span>.warn(res.retmsg || <span class="string">&apos;Unknown error.&apos;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">$.ajax({</span><br><span class="line">	url: <span class="string">&apos;/cgi-bin/fetch.cgi&apos;</span>,</span><br><span class="line">	success: <span class="function"><span class="keyword">function</span>(<span class="params">res</span>) </span>{</span><br><span class="line">		<span class="comment">// &#x6B64;&#x5904;CGI&#x5B9A;&#x4E49;&#x7684;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#x4E3A;code&#xFF0C;&#x9519;&#x8BEF;&#x63CF;&#x8FF0;&#x4E3A;msg</span></span><br><span class="line">		<span class="keyword">switch</span> (<span class="built_in">parseInt</span>(res.code, <span class="number">10</span>)) {</span><br><span class="line">		<span class="keyword">case</span> <span class="string">&apos;200&apos;</span>:</span><br><span class="line">			<span class="built_in">console</span>.log(res.msg || <span class="string">&apos;Ok&apos;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> <span class="string">&apos;500&apos;</span>:</span><br><span class="line">			<span class="built_in">console</span>.error(res.msg || <span class="string">&apos;Server internal error.&apos;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">default</span>:</span><br><span class="line">			<span class="built_in">console</span>.warn(res.msg || <span class="string">&apos;Unknown error.&apos;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h3 id="&#x53EF;&#x63D2;&#x62D4;"><a href="#&#x53EF;&#x63D2;&#x62D4;" class="headerlink" title="&#x53EF;&#x63D2;&#x62D4;"></a>&#x53EF;&#x63D2;&#x62D4;</h3><p>&#x5C3D;&#x91CF;&#x4EE5;&#x53EF;&#x63D2;&#x62D4;&#x7684;&#x8BBE;&#x8BA1;&#x6765;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5F53;&#x8BE5;&#x6A21;&#x5757;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x65F6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5F88;&#x5FEB;&#x88AB;&#x79FB;&#x9664;&#xFF0C;&#x800C;&#x4E0D;&#x7528;&#x5BF9;&#x5176;&#x4ED6;&#x6A21;&#x5757;&#x6216;&#x8C03;&#x7528;&#x8BE5;&#x6A21;&#x5757;&#x7684;&#x4E1A;&#x52A1;&#x811A;&#x672C;&#x505A;&#x51FA;&#x5927;&#x91CF;&#x4FEE;&#x6539;, &#x5982;&#xFF1A;</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">var FundsCheck = <span class="built_in">require</span>(<span class="string">&apos;./funds_check&apos;</span>);</span><br><span class="line">...</span><br><span class="line">FundsCheck.enable();</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x6B64;&#x6A21;&#x5757;&#x65F6;&#xFF0C;&#x53EA;&#x9700;&#x8BB2;&#x6A21;&#x5757;&#x5F15;&#x7528;&#x5220;&#x9664;&#xFF0C;&#x5E76;&#x5220;&#x9664;&#x76F8;&#x5173;&#x8C03;&#x7528;&#x5373;&#x53EF;&#xFF0C;&#x65E0;&#x9700;&#x5BF9;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x505A;&#x51FA;&#x5927;&#x91CF;&#x4FEE;&#x6539;&#x3002;</p>
+<h3 id="&#x4F7F;&#x7528;&#x4F4D;&#x8FD0;&#x7B97;&#x5904;&#x7406;&#x6DF7;&#x5408;&#x591A;&#x79CD;&#x60C5;&#x51B5;&#x573A;&#x666F;&#x7684;&#x5224;&#x65AD;"><a href="#&#x4F7F;&#x7528;&#x4F4D;&#x8FD0;&#x7B97;&#x5904;&#x7406;&#x6DF7;&#x5408;&#x591A;&#x79CD;&#x60C5;&#x51B5;&#x573A;&#x666F;&#x7684;&#x5224;&#x65AD;" class="headerlink" title="&#x4F7F;&#x7528;&#x4F4D;&#x8FD0;&#x7B97;&#x5904;&#x7406;&#x6DF7;&#x5408;&#x591A;&#x79CD;&#x60C5;&#x51B5;&#x573A;&#x666F;&#x7684;&#x5224;&#x65AD;"></a>&#x4F7F;&#x7528;&#x4F4D;&#x8FD0;&#x7B97;&#x5904;&#x7406;&#x6DF7;&#x5408;&#x591A;&#x79CD;&#x60C5;&#x51B5;&#x573A;&#x666F;&#x7684;&#x5224;&#x65AD;</h3><p>&#x8FD9;&#x91CC;&#x540C;&#x5B9A;&#x4E49;&#x5E38;&#x91CF;&#x7C7B;&#x4F3C;&#xFF0C;&#x901A;&#x8FC7;&#x9884;&#x5B9A;&#x4E49;&#x4E00;&#x4E9B;&#x9519;&#x8BEF;&#x7684;&#x5E38;&#x91CF;&#xFF0C;&#x518D;&#x901A;&#x8FC7;&#x4F4D;&#x8FD0;&#x7B97;&#xFF0C;&#x4F7F;&#x5F97;&#x5404;&#x79CD;&#x60C5;&#x51B5;&#x7684;&#x5224;&#x65AD;&#x53D8;&#x5F97;&#x66F4;&#x5177;&#x8BED;&#x4E49;&#x5316;&#x3002;</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// &#x9996;&#x5148;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E00;&#x4E9B;&#x4E8C;&#x8FDB;&#x5236;&#x7684;&#x9519;&#x8BEF;&#x7801;</span></span><br><span class="line"><span class="keyword">var</span> ETIMEOUT = <span class="number">1</span>,</span><br><span class="line">	EFORBIDDEN = <span class="number">3</span>,</span><br><span class="line">	ENEEDAUTH = <span class="number">5</span>;</span><br><span class="line">	</span><br><span class="line"><span class="comment">// &#x63A5;&#x7740;&#x6211;&#x4EEC;&#x5C06;&#x89E6;&#x53D1;&#x7684;&#x5404;&#x79CD;&#x9519;&#x8BEF;&#x7EC4;&#x5408;&#x5230;&#x9519;&#x8BEF;&#x63CF;&#x8FF0;&#x7B26;&#x4E2D;</span></span><br><span class="line"><span class="keyword">var</span> errorDescriptor;</span><br><span class="line">$.ajax({</span><br><span class="line">   url: <span class="string">&apos;/cgi-bin/userinfo.cgi&apos;</span>,</span><br><span class="line">   success: <span class="function"><span class="keyword">function</span>(<span class="params">res</span>) </span>{</span><br><span class="line">        <span class="keyword">switch</span> (<span class="built_in">parseInt</span>(res.retcode, <span class="number">10</span>)) {</span><br><span class="line">        <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">        	errorDescriptor = errorDescriptor | EFORBIDDEN; <span class="comment">// &#x5728;&#x9519;&#x8BEF;&#x63CF;&#x8FF0;&#x7B26;&#x4E2D;&#x52A0;&#x5165;&#x7981;&#x6B62;&#x8BBF;&#x95EE;&#x9519;&#x8BEF;</span></span><br><span class="line">        	errorDescriptor = errorDescriptor | ENEEDAUTH; <span class="comment">// &#x5728;&#x9519;&#x8BEF;&#x63CF;&#x8FF0;&#x7B26;&#x4E2D;&#x518D;&#x540C;&#x65F6;&#x52A0;&#x5165;&#x9700;&#x8981;&#x6388;&#x6743;&#x9519;&#x8BEF;</span></span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">        	errorDescriptor = errorDescriptor | ENEEDAUTH; <span class="comment">// &#x5728;&#x9519;&#x8BEF;&#x63CF;&#x8FF0;&#x7B26;&#x4E2D;&#x52A0;&#x5165;&#x9700;&#x8981;&#x6388;&#x6743;&#x9519;&#x8BEF;</span></span><br><span class="line">        	<span class="keyword">break</span>;</span><br><span class="line">        }</span><br><span class="line">   },</span><br><span class="line">   error: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{</span><br><span class="line">       errorDescriptor = errorDescriptor | ETIMEOUT; <span class="comment">// &#x5728;&#x9519;&#x8BEF;&#x63CF;&#x8FF0;&#x7B26;&#x4E2D;&#x52A0;&#x5165;&#x8D85;&#x65F6;&#x9519;&#x8BEF;</span></span><br><span class="line">   }</span><br><span class="line">});</span><br><span class="line"></span><br><span class="line"><span class="comment">// &#x7136;&#x540E;&#x6211;&#x4EEC;&#x5728;&#x5176;&#x4ED6;&#x5730;&#x65B9;&#x5C31;&#x53EF;&#x4EE5;&#x5224;&#x65AD;&#x9519;&#x8BEF;&#x63CF;&#x8FF0;&#x7B26;&#x4E2D;&#x662F;&#x5426;&#x5305;&#x542B;&#x6307;&#x5B9A;&#x7684;&#x9519;&#x8BEF;&#x4E86;</span></span><br><span class="line"><span class="keyword">if</span> (errorDescriptor &amp; ETIMEOUT) {</span><br><span class="line">    <span class="built_in">console</span>.warn(<span class="string">&apos;&#x8D85;&#x65F6;&#x4E86;&apos;</span>);</span><br><span class="line">}</span><br><span class="line"><span class="keyword">if</span> (errorDescriptor &amp; EFORBIDDEN || errorDescriptor &amp; EFORBIDDEN ) {</span><br><span class="line">    <span class="built_in">console</span>.error(<span class="string">&apos;&#x7981;&#x6B62;&#x8BBF;&#x95EE;&#x6216;&#x8005;&#x9700;&#x8981;&#x6388;&#x6743;&apos;</span>);</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h3 id="document-createDocumentFragment"><a href="#document-createDocumentFragment" class="headerlink" title="document.createDocumentFragment"></a>document.createDocumentFragment</h3><p>&#x4F7F;&#x7528;&#x5F71;&#x5B50;&#x6587;&#x6863;&#x6765;&#x6302;&#x8F7D;&#x8282;&#x70B9;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x62FC;&#x63A5;&#x5B57;&#x7B26;&#x4E32;&#x7136;&#x540E;&#x4F7F;&#x7528; innerHTML &#x65B9;&#x6CD5;&#x6765;&#x6279;&#x91CF;&#x7684;&#x521B;&#x5EFA; DOM &#x8282;&#x70B9;&#xFF0C;&#x8FD9;&#x6837;&#x6027;&#x80FD;&#x66F4;&#x9AD8;&#xFF0C;&#x800C;&#x4E14;&#x8BED;&#x4E49;&#x66F4;&#x597D;&#xFF1B;</p>
+<h3 id="&#x5E03;&#x5C14;&#x503C;&#x53D8;&#x91CF;&#x547D;&#x540D;"><a href="#&#x5E03;&#x5C14;&#x503C;&#x53D8;&#x91CF;&#x547D;&#x540D;" class="headerlink" title="&#x5E03;&#x5C14;&#x503C;&#x53D8;&#x91CF;&#x547D;&#x540D;"></a>&#x5E03;&#x5C14;&#x503C;&#x53D8;&#x91CF;&#x547D;&#x540D;</h3><p>&#x5E03;&#x5C14;&#x503C;&#x53D8;&#x91CF;&#x7684;&#x547D;&#x540D;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x4EE5; is &#x6216;&#x8005; can &#x5F00;&#x5934;&#x3002;</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ability</span>(<span class="params">isActionResolved, canMakeRequest</span>) </span>{</span><br><span class="line">    <span class="keyword">if</span> (isActionResolved || canMakeRequest) {</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&apos;ability is met.&apos;</span>);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+
+        
+      </div>
+    
+
+    
+      <div class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/tags/微证券/">
+                #微证券
+              </a>
+            
+          </div>
+        
+
+        
+          <div class="post-nav">
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2016/02/14/moments-in-nanjing/">moments in nanjing</a>
+              
+            </div>
+          </div>
+        
+
+        
+        
+      </div>
+    
+  </div>
+
+
+  
+
+    <div class="comments" id="comments">
+      
+    </div>
+  
+
+          </div>
+          <br/>
+          
+          
+          
+        </div>
+
+        
+<div class="sidebar-toggle">
+  <div class="sidebar-toggle-line-wrap">
+    <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+  </div>
+</div>
+
+<div id="sidebar" class="sidebar">
+  <div class="sidebar-inner">
+
+    
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview" data-target="site-overview">
+          站点概览
+        </li>
+      </ul>
+    
+
+    <div class="site-overview">
+      <div class="site-autsider motion-element">
+        <img class="site-author-image" src="/about/index.htmlprofile.png" alt="kevin" />
+        <p class="site-author-name">kevin</p>
+      </div>
+      <p class="site-description motion-element">一枚追求用户极致体验的前端工程师。</p>
+      <div class="site-state motion-element">
+        <div class="site-state-item site-state-posts">
+          <a href="/archives">
+            <span class="site-state-item-count">3</span>
+            <span class="site-state-item-name">日志</span>
+          </a>
+        </div>
+
+        <div class="site-state-item site-state-categories">
+          
+            <span class="site-state-item-count">3</span>
+            <span class="site-state-item-name">分类</span>
+          
+        </div>
+
+        <div class="site-state-item site-state-tags">
+          <a href="/tags">
+            <span class="site-state-item-count">4</span>
+            <span class="site-state-item-name">标签</span>
+          </a>
+        </div>
+
+      </div>
+      
+      <!-- 添加分类end-->
+      
+
+      <div class="links-of-author motion-element">
+        
+          
+            <span class="links-of-author-item">
+              <a href="https://github.com/latel/" target="_blank">github</a>
+            </span>
+          
+        
+      </div>
+
+      
+      
+
+    </div>
+
+    
+      <div class="post-toc-wrap sidebar-panel-active">
+        <div class="post-toc-indicator-top post-toc-indicator"></div>
+        <div class="post-toc">
+          
+          
+            <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-编辑器配置"><span class="nav-number">1.</span> <span class="nav-text">1. 编辑器配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-EditorConfig-是什么？"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 EditorConfig 是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-编辑器支持情况"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 编辑器支持情况</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-具体配置"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 具体配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-编码风格和规范"><span class="nav-number">2.</span> <span class="nav-text">2. 编码风格和规范</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-选型"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 选型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-1-JSlint"><span class="nav-number">2.1.1.</span> <span class="nav-text">2.1.1 JSlint</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-2-JShint"><span class="nav-number">2.1.2.</span> <span class="nav-text">2.1.2 JShint</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-3-ESlint"><span class="nav-number">2.1.3.</span> <span class="nav-text">2.1.3 ESlint</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-配置"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#env"><span class="nav-number">2.3.</span> <span class="nav-text">env</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#globals"><span class="nav-number">2.4.</span> <span class="nav-text">globals</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rules"><span class="nav-number">2.5.</span> <span class="nav-text">rules</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-为编辑器添加支持"><span class="nav-number">2.6.</span> <span class="nav-text">2.3 为编辑器添加支持</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-1-全局安装-ESLint"><span class="nav-number">2.6.1.</span> <span class="nav-text">2.3.1 全局安装 ESLint</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-2-为-SublimeText-添加支持"><span class="nav-number">2.6.2.</span> <span class="nav-text">2.3.2 为 SublimeText 添加支持</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-4-为-Visual-Studio-Code-添加支持"><span class="nav-number">2.6.3.</span> <span class="nav-text">2.3.4 为 Visual Studio Code 添加支持</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-附上团队所采用的规范细则："><span class="nav-number">2.7.</span> <span class="nav-text">2.4 附上团队所采用的规范细则：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-注释规范"><span class="nav-number">3.</span> <span class="nav-text">3. 注释规范</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#我们还提炼了一些注释的约束，希望能在注释层面减少团队的沟通障碍"><span class="nav-number">3.1.</span> <span class="nav-text">我们还提炼了一些注释的约束，希望能在注释层面减少团队的沟通障碍:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#直接传DOM节点性能更优"><span class="nav-number">3.2.</span> <span class="nav-text">直接传DOM节点性能更优</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#避免变量没有定义的报错"><span class="nav-number">3.3.</span> <span class="nav-text">避免变量没有定义的报错</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缓存节点提高性能-挂载子节点到父节点的变量上更易于理解"><span class="nav-number">3.4.</span> <span class="nav-text">缓存节点提高性能,挂载子节点到父节点的变量上更易于理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#合适的留白，增强代码阅读性"><span class="nav-number">3.5.</span> <span class="nav-text">合适的留白，增强代码阅读性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#尽量不要使用自动格式化插件"><span class="nav-number">3.6.</span> <span class="nav-text">尽量不要使用自动格式化插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#语义化"><span class="nav-number">3.7.</span> <span class="nav-text">语义化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定义常量"><span class="nav-number">3.8.</span> <span class="nav-text">定义常量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#链式调用"><span class="nav-number">3.9.</span> <span class="nav-text">链式调用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对服务器返回的-retcode-处理"><span class="nav-number">3.10.</span> <span class="nav-text">对服务器返回的 retcode 处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可插拔"><span class="nav-number">3.11.</span> <span class="nav-text">可插拔</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用位运算处理混合多种情况场景的判断"><span class="nav-number">3.12.</span> <span class="nav-text">使用位运算处理混合多种情况场景的判断</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#document-createDocumentFragment"><span class="nav-number">3.13.</span> <span class="nav-text">document.createDocumentFragment</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#布尔值变量命名"><span class="nav-number">3.14.</span> <span class="nav-text">布尔值变量命名</span></a></li></ol></li></ol></div>
+          
+        </div>
+        <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+      </div>
+    
+
+  </div>
+</div>
+
+
+      </div>
+
+
+
+    </div>
+
+    
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; &nbsp;  2014 - 
+  2016
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author">kevin</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/lzlun129/my-hexo-next">
+    Customized.NexT.Mist
+  </a>
+</div>
+
+
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+  
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+
+  <script type="text/javascript">
+  function hasMobileUA () {
+    var nav = window.navigator;
+    var ua = nav.userAgent;
+    var pa = /iPad|iPhone|Android|Opera Mini|BlackBerry|webOS|UCWEB|Blazer|PSP|IEMobile|Symbian/g;
+
+    return pa.test(ua);
+  }
+
+  function isDesktop () {
+    return screen.width > 991 && !hasMobileUA();
+  }
+
+  function isTablet () {
+    return screen.width < 992 && screen.width > 767 && hasMobileUA();
+  }
+
+  function isMobile () {
+    return screen.width < 767 && hasMobileUA();
+  }
+
+  function escapeSelector (selector) {
+    return selector.replace(/[!"$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "\\$&")
+  }
+</script>
+
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" id="motion.global">
+  $(document).ready(function () {
+    var body = $('body');
+    var isSidebarVisible = false;
+    var sidebarToggle = $('.sidebar-toggle');
+    var sidebarToggleLine1st = $('.sidebar-toggle-line-first')
+    var sidebarToggleLine2nd = $('.sidebar-toggle-line-middle');
+    var sidebarToggleLine3rd = $('.sidebar-toggle-line-last');
+    var sidebar = $('.sidebar');
+
+    var SIDEBAR_WIDTH = '320px';
+    var SIDEBAR_DISPLAY_DURATION = 300;
+
+    var sidebarToogleLineStatusInit = {width: '100%', opacity: 1, left: 0, rotateZ: 0, top: 0};
+
+    var sidebarToggleLine1stStatusInit = sidebarToogleLineStatusInit;
+    var sidebarToggleLine1stStatusArrow = {width: '50%', rotateZ: '-45deg', top: '2px'};
+    var sidebarToogleLine1stStatusClose = {width: '100%', rotateZ: '-45deg', top: '5px'};
+
+    var sidebarToggleLine2ndStatusInit = sidebarToogleLineStatusInit;
+    var sidebarToggleLine2ndStatusArrow = {width: '90%'};
+    var sidebarToogleLine2ndStatusClose = {opacity: 0};
+
+    var sidebarToggleLine3rdStatusInit = sidebarToogleLineStatusInit;
+    var sidebarToggleLine3rdStatusArrow = {width: '50%', rotateZ: '45deg', top: '-2px'};
+    var sidebarToogleLine3rdStatusClose = {width: '100%', rotateZ: '45deg', top: '-5px'};
+
+    LogoAndMenuMotion();
+    sidebatToggleMotion();
+    postsListMotion();
+    backToTopMotion();
+
+
+    $(document)
+      .on('sidebar.isShowing', function () {
+        isDesktop() && body.velocity(
+          {paddingRight: SIDEBAR_WIDTH},
+          SIDEBAR_DISPLAY_DURATION
+        );
+        sidebarContentMotion();
+      })
+      .on('sidebar.isHiding', function () {});
+
+    function LogoAndMenuMotion() {
+      $.Velocity.RunSequence([
+        { e: $('.brand'), p: { opacity: 1 }, o: { duration: 100 } },
+        { e: $('.logo'), p: { opacity: 1, top: 0 }, o: { duration: 50} },
+        
+        { e: $('.logo-line-before i'), p: { translateX: "100%" }, o: { duration: 500, sequenceQueue: false } },
+        { e: $('.logo-line-after i'), p: { translateX: "-100%" }, o: { duration: 500, sequenceQueue: false } },
+        
+        { e: $('.site-title'), p: { opacity: 1, top: 0 }, o: { duration: 200 } }
+      ]);
+      $('.menu-item').velocity('transition.slideDownIn', {display: null});
+    }
+
+
+    function backToTopMotion () {
+      var b2top = $('.back-to-top');
+      b2top.on('click', function () {
+        body.velocity('scroll');
+      });
+    }
+
+    function sidebarShowMotion () {
+
+      sidebarToggleLine1st.velocity(sidebarToogleLine1stStatusClose);
+      sidebarToggleLine2nd.velocity(sidebarToogleLine2ndStatusClose);
+      sidebarToggleLine3rd.velocity(sidebarToogleLine3rdStatusClose);
+
+      sidebar.velocity({width: SIDEBAR_WIDTH}, {
+        display: 'block',
+        duration: SIDEBAR_DISPLAY_DURATION,
+        complete: function () {
+          sidebar.addClass('sidebar-active');
+          sidebar.trigger('sidebar.didShow');
+        }
+      });
+      sidebar.trigger('sidebar.isShowing');
+    }
+
+    function sidebarHideMotion () {
+      isDesktop() && body.velocity({paddingRight: 0});
+      sidebar.velocity('reverse');
+
+      sidebarToggleLine1st.velocity(sidebarToggleLine1stStatusInit);
+      sidebarToggleLine2nd.velocity(sidebarToggleLine2ndStatusInit);
+      sidebarToggleLine3rd.velocity(sidebarToggleLine3rdStatusInit);
+
+      sidebar.removeClass('sidebar-active');
+      sidebar.trigger('sidebar.isHiding');
+    };
+
+    function sidebarContentMotion () {
+      $('.sidebar .motion-element').velocity(
+        'transition.slideRightIn',
+        {stagger: 50, drag: true}
+      );
+    }
+
+    function postsListMotion () {
+      var postMotionOptions = window.postMotionOptions || {stagger: 300, drag: true};
+      $('.post').velocity('transition.slideDownIn', postMotionOptions);
+    }
+
+    function sidebatToggleMotion () {
+      sidebarToggle.on('click', function () {
+        isSidebarVisible ? sidebarHideMotion() : sidebarShowMotion();
+        isSidebarVisible = !isSidebarVisible;
+      });
+
+      sidebarToggle.hover(function () {
+        if (isSidebarVisible) {return}
+        sidebarToggleLine1st.velocity('stop').velocity(sidebarToggleLine1stStatusArrow);
+        sidebarToggleLine2nd.velocity('stop').velocity(sidebarToggleLine2ndStatusArrow);
+        sidebarToggleLine3rd.velocity('stop').velocity(sidebarToggleLine3rdStatusArrow);
+      }, function () {
+        if (isSidebarVisible) {return}
+        sidebarToggleLine1st.velocity('stop').velocity(sidebarToggleLine1stStatusInit);
+        sidebarToggleLine2nd.velocity('stop').velocity(sidebarToggleLine2ndStatusInit);
+        sidebarToggleLine3rd.velocity('stop').velocity(sidebarToggleLine3rdStatusInit);
+      });
+    }
+  });
+
+</script>
+
+
+
+
+
+
+
+  
+  
+<script type="text/javascript" id="bootstrap.scrollspy.custom">
+  /* ========================================================================
+  * Bootstrap: scrollspy.js v3.3.2
+  * http://getbootstrap.com/javascript/#scrollspy
+  * ========================================================================
+  * Copyright 2011-2015 Twitter, Inc.
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+  * ======================================================================== */
+
+  /**
+   * Custom by iissnan
+   *
+   * - Add a `clear.bs.scrollspy` event.
+   * - Esacpe targets selector.
+   */
+
+
+  +function ($) {
+    'use strict';
+
+    // SCROLLSPY CLASS DEFINITION
+    // ==========================
+
+    function ScrollSpy(element, options) {
+      this.$body          = $(document.body)
+      this.$scrollElement = $(element).is(document.body) ? $(window) : $(element)
+      this.options        = $.extend({}, ScrollSpy.DEFAULTS, options)
+      this.selector       = (this.options.target || '') + ' .nav li > a'
+      this.offsets        = []
+      this.targets        = []
+      this.activeTarget   = null
+      this.scrollHeight   = 0
+
+      this.$scrollElement.on('scroll.bs.scrollspy', $.proxy(this.process, this))
+      this.refresh()
+      this.process()
+    }
+
+    ScrollSpy.VERSION  = '3.3.2'
+
+    ScrollSpy.DEFAULTS = {
+      offset: 10
+    }
+
+    ScrollSpy.prototype.getScrollHeight = function () {
+      return this.$scrollElement[0].scrollHeight || Math.max(this.$body[0].scrollHeight, document.documentElement.scrollHeight)
+    }
+
+    ScrollSpy.prototype.refresh = function () {
+      var that          = this
+      var offsetMethod  = 'offset'
+      var offsetBase    = 0
+
+      this.offsets      = []
+      this.targets      = []
+      this.scrollHeight = this.getScrollHeight()
+
+      if (!$.isWindow(this.$scrollElement[0])) {
+        offsetMethod = 'position'
+        offsetBase   = this.$scrollElement.scrollTop()
+      }
+
+      this.$body
+        .find(this.selector)
+        .map(function () {
+          var $el   = $(this)
+          var href  = $el.data('target') || $el.attr('href')
+          var $href = /^#./.test(href) && $(escapeSelector(href)) // Need to escape selector.
+
+          return ($href
+            && $href.length
+            && $href.is(':visible')
+            && [[$href[offsetMethod]().top + offsetBase, href]]) || null
+        })
+        .sort(function (a, b) { return a[0] - b[0] })
+        .each(function () {
+          that.offsets.push(this[0])
+          that.targets.push(this[1])
+        })
+
+
+    }
+
+    ScrollSpy.prototype.process = function () {
+      var scrollTop    = this.$scrollElement.scrollTop() + this.options.offset
+      var scrollHeight = this.getScrollHeight()
+      var maxScroll    = this.options.offset + scrollHeight - this.$scrollElement.height()
+      var offsets      = this.offsets
+      var targets      = this.targets
+      var activeTarget = this.activeTarget
+      var i
+
+      if (this.scrollHeight != scrollHeight) {
+        this.refresh()
+      }
+
+      if (scrollTop >= maxScroll) {
+        return activeTarget != (i = targets[targets.length - 1]) && this.activate(i)
+      }
+
+      if (activeTarget && scrollTop < offsets[0]) {
+        $(this.selector).trigger('clear.bs.scrollspy')  // Add a custom event.
+        this.activeTarget = null
+        return this.clear()
+      }
+
+      for (i = offsets.length; i--;) {
+        activeTarget != targets[i]
+          && scrollTop >= offsets[i]
+          && (!offsets[i + 1] || scrollTop <= offsets[i + 1])
+          && this.activate(targets[i])
+      }
+    }
+
+    ScrollSpy.prototype.activate = function (target) {
+      this.activeTarget = target
+
+      this.clear()
+
+      var selector = this.selector +
+        '[data-target="' + target + '"],' +
+        this.selector + '[href="' + target + '"]'
+
+      var active = $(selector)
+        .parents('li')
+        .addClass('active')
+
+      if (active.parent('.dropdown-menu').length) {
+        active = active
+          .closest('li.dropdown')
+          .addClass('active')
+      }
+
+      active.trigger('activate.bs.scrollspy')
+    }
+
+    ScrollSpy.prototype.clear = function () {
+      $(this.selector)
+        .parentsUntil(this.options.target, '.active')
+        .removeClass('active')
+    }
+
+
+    // SCROLLSPY PLUGIN DEFINITION
+    // ===========================
+
+    function Plugin(option) {
+      return this.each(function () {
+        var $this   = $(this)
+        var data    = $this.data('bs.scrollspy')
+        var options = typeof option == 'object' && option
+
+        if (!data) $this.data('bs.scrollspy', (data = new ScrollSpy(this, options)))
+        if (typeof option == 'string') data[option]()
+      })
+    }
+
+    var old = $.fn.scrollspy
+
+    $.fn.scrollspy             = Plugin
+    $.fn.scrollspy.Constructor = ScrollSpy
+
+
+    // SCROLLSPY NO CONFLICT
+    // =====================
+
+    $.fn.scrollspy.noConflict = function () {
+      $.fn.scrollspy = old
+      return this
+    }
+
+
+    // SCROLLSPY DATA-API
+    // ==================
+
+    $(window).on('load.bs.scrollspy.data-api', function () {
+      $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this)
+        Plugin.call($spy, $spy.data())
+      })
+    })
+
+  }(jQuery);
+</script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var $sidebarInner = $('.sidebar-inner');
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.didShow', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+          var self = this;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      $(indicator).velocity('stop').velocity({
+        opacity: action === 'show' ? 0.4 : 0
+      }, { duration: 100 });
+    }
+
+  });
+</script>
+
+
+  <script type="text/javascript" id="sidebar.nav">
+    $(document).ready(function () {
+      var html = $('html');
+
+      $('.sidebar-nav li').on('click', function () {
+        var item = $(this);
+        var activeTabClassName = 'sidebar-nav-active';
+        var activePanelClassName = 'sidebar-panel-active';
+        if (item.hasClass(activeTabClassName)) {
+          return;
+        }
+
+        var currentTarget = $('.' + activePanelClassName);
+        var target = $('.' + item.data('target'));
+
+        currentTarget.velocity('transition.slideUpOut', 200, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', 200)
+            .addClass(activePanelClassName);
+        });
+
+        item.siblings().removeClass(activeTabClassName);
+        item.addClass(activeTabClassName);
+      });
+
+      $('.post-toc a').on('click', function (e) {
+        e.preventDefault();
+        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        });
+      });
+
+      // Expand sidebar on post detail page by default, when post has a toc.
+      var $tocContent = $('.post-toc-content');
+      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0 && isDesktop()) {
+        setTimeout(function () {
+          $('.sidebar-toggle').trigger('click');
+        }, 800);
+      }
+    });
+  </script>
+
+
+
+
+  
+
+  
+  
+
+  
+    
+  
+  
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:""};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+
+  
+  
+</body>
+</html>
